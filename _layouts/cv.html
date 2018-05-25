@@ -1,0 +1,115 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+{% include _head.html %}
+<style>
+  .bottom-three {
+     margin-bottom: 1.5cm;
+   }
+  .bottom-small {
+     margin-bottom: 1cm;
+   }
+   .tex sub, .latex sub, .latex sup {
+  text-transform: uppercase;
+}
+
+.tex sub, .latex sub {
+  vertical-align: -0.1ex;
+  margin-left: -0.1667em;
+  margin-right: -0.1em;
+}
+
+.tex, .latex, .tex sub, .latex sub {
+  font-size: 1em;
+}
+
+.latex sup {
+  font-size: 0.85em;
+  vertical-align: -0.3em;
+  margin-left: -0.1em;
+  margin-right: -0.15em;
+}
+</style>
+</head>
+
+<body class="page">
+
+{% include _browser-upgrade.html %}
+
+{% include _navigation.html %}
+
+{% if page.image.feature %}
+  <div class="image-wrap">
+  <img src=
+    {% if page.image.feature contains 'http://' %}
+      "{{ page.image.feature }}"
+    {% elsif page.image.feature contains 'https://' %}
+      "{{ page.image.feature }}"
+    {% else %}
+      "{{ site.url }}/images/{{ page.image.feature }}"
+    {% endif %}
+  alt="{{ page.title }} feature image">
+  {% if page.image.credit %}
+    <span class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></span>
+  {% endif %}
+  </div><!-- /.image-wrap -->
+{% endif %}
+<div id="main" role="main">
+  <div class="article-author-side">
+    {% include _author-bio.html %}
+  </div>
+  <article>
+    <h1>{{ page.title }}</h1>
+    {{ content }}
+    <div class="article-wrap">
+    <ul>
+        <p align="center"><img src="{{ site.url }}/images/CV/006-suitcase-1.png" alt="Working Experience" width="90" height="90"></p>
+        <li align="left"> <strong>Research Assistant</strong> at CAiRE lab of <a href="http://www.ust.hk/" target="_blank">The Hong Kong University of Science and Technology</a> supervised by <a href="https://en.wikipedia.org/wiki/Pascale_Fung" target="_blank">Pascale Fung</a>.</li>
+        <li align="left"> <strong>Teaching Assistant</strong> of: Building Interactive Intelligent Systems at <a href="http://www.ust.hk/" target="_blank">HKUST</a> and Advanced Programming at <a href="http://didawiki.di.unipi.it/doku.php/magistraleinformatica/pa/start" target="_blank">UniPi</a>.</li>
+        <li align="left"> <strong>Adjunct Lecturer</strong> of Databases for <a href="http://fisicamedica.df.unipi.it/" target="_blank">Specialty School of Medical Physics</a> of Pisa University.</li>
+        <li align="left"> <strong>Mentor</strong> at the <a href="https://pisa.coderdojo.it/" target="_blank">Pisa CoderDojo</a> (Volunteer Activity).</li>    
+        <li align="left"class="bottom-three"> <strong>Research Assistant</strong> at the Center of Health Informatics in the HKBU Computer Science Department.</li>    
+    </ul>
+
+    <ul>
+    <p align="center" ><img src="{{ site.url }}/images/CV/008-education.png" alt="Education" width="120" height="120"></p>
+    <li align="left"><strong>M.Sc.</strong> degree in Computer Science at Pisa University 110/110 </br> Honours supervised by <a href="http://pages.di.unipi.it/attardi/" target="_blank">Prof. Giuseppe Attardi</a>.</li>
+    <li align="left"><strong>M.Sc.</strong> degree in Advanced Information Systems at HKBU 3.89/4.0 Distintion supervised by <a href="https://www.comp.hkbu.edu.hk/~jiming/" target="_blank">Prof. Liu Jiming</a>.</li>
+    <li align="left" class="bottom-three"><strong>B.Sc.</strong> degree in Computer Science at Perugia University 110/110 Honours supervised by <a href="https://www.unipg.it/personale/cristina.pinotti" target="_blank">Prof. Pinotti Maria Cristina</a>.</li>
+    </ul>
+
+    <ul>
+    <p align="center"><img src="{{ site.url }}/images/CV/003-computer-2.png" alt="Computer Skills" width="110" height="110"></p>
+    <li align="left"> <strong>PyTorch</strong> for in my research projects and also experienced in <strong>Tensorflow</strong>, <strong>Keras</strong> and <strong>SciKit Learn</strong>. </li>
+    <li align="left"> <strong>Python</strong> and <strong>Haskell</strong> are the languages I love.</li>
+    <li align="left"> <strong><span class="latex">L<sup>a</sup>T<sub>e</sub>X</span></strong> for everything, including slides.</li>
+    <li align="left" class="bottom-three"> I have experiences using <strong>Javascript</strong>, <strong>Java</strong>, <strong>PHP</strong>, <strong>SQL</strong>, <strong>ReactJs</strong>, <strong>Git</strong>, and <strong>D3.js</strong>.</li>
+    </ul>
+
+    <ul>
+    <p align="center"><img src="{{ site.url }}/images/CV/001-earth.png" alt="Languages" width="100" height="100"></li>
+    <li align="left"> <strong>Italian</strong> is my Native Language.</li>
+    <li align="left"> <strong>English</strong> is the language I usually use.</li>
+    <li align="left" class="bottom-three"> I speak very very basic <strong>Chinese</strong>, I am trying to learning it.</li>
+    </ul>
+  
+    </div><!-- /.article-wrap -->
+    {% if site.disqus_shortname and page.comments %}
+      <section id="disqus_thread"></section><!-- /#disqus_thread -->
+    {% endif %}
+  </article>
+</div><!-- /#index -->
+
+<div class="footer-wrap">
+  <footer>
+    {% include _footer.html %}
+  </footer>
+</div><!-- /.footer-wrap -->
+
+{% include _scripts.html %}          
+
+</body>
+</html>

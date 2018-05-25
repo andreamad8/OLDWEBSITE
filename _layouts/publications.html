@@ -1,0 +1,345 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+{% include _head.html %}
+</head>
+
+<body class="page">
+<style>
+    /*********************************
+     The list of publication items
+     *********************************/
+/* The list of items */
+.biblist { }
+
+/* The item */
+.biblist li { }
+
+/* You can define custom styles for plstyle field here. */
+
+
+/*************************************
+ The box that contain BibTeX code
+ *************************************/
+div.noshow { display: none; }
+div.bibtex {
+	margin-right: 0%;
+	margin-top: 1.2em;
+	margin-bottom: 1em;
+	border: 1px solid silver;
+	padding: 0em 1em;
+	background: #ffffee;
+}
+div.bibtex pre { font-size: 75%; overflow: auto;  width: 100%; padding: 0em 0em;}</style>
+<script type="text/javascript">
+    <!--
+    // Toggle Display of BibTeX
+    function toggleBibtex(articleid) {
+        var bib = document.getElementById('bib_'+articleid);
+        if (bib) {
+            if(bib.className.indexOf('bibtex') != -1) {
+                bib.className.indexOf('noshow') == -1?bib.className = 'bibtex noshow':bib.className = 'bibtex';
+            }
+        } else {
+            return;
+        }
+    }
+-->
+    </script>
+
+{% include _browser-upgrade.html %}
+
+{% include _navigation.html %}
+
+{% if page.image.feature %}
+  <div class="image-wrap">
+  <img src=
+    {% if page.image.feature contains 'http://' %}
+      "{{ page.image.feature }}"
+    {% elsif page.image.feature contains 'https://' %}
+      "{{ page.image.feature }}"
+    {% else %}
+      "{{ site.url }}/images/{{ page.image.feature }}"
+    {% endif %}
+  alt="{{ page.title }} feature image">
+  {% if page.image.credit %}
+    <span class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></span>
+  {% endif %}
+  </div><!-- /.image-wrap -->
+{% endif %}
+
+<div id="main" role="main">
+  <div class="article-author-side">
+    {% include _author-bio.html %}
+  </div>
+  <article>
+    <h1>{{ page.title }}</h1>
+    <div class="article-wrap">
+      {{ content }}
+
+
+
+<h4 style="margin-bottom:0px;padding-top:10px;">Top-Tier Conference</h4>
+<!-- Generated from JabRef by PubList by Truong Nghiem at 11:44 on 2015.09.10. -->
+<ul class="biblist">
+
+<!-- Item: ACL2018 -->
+<li ><p>
+Madotto Andrea*, Chien-Sheng Wu*, and Pascale Fung<br><b>Mem2Seq: Effectively Incorporating Knowledge Bases into End-to-End Task-Oriented Dialog Systems</b><br>
+<i>Long Paper ACL 2018 </i> 
+<br />
+<a href="https://arxiv.org/pdf/1804.08217.pdf" target="_blank">[PDF]</a> <a href="https://github.com/HLTCHKUST/Mem2Seq"  target="_blank">[CODE]</a>
+<a href="javascript:toggleBibtex('madotto2018mem2seq')">[BibTeX]</a>
+</p>
+<div id="bib_madotto2018mem2seq" class="bibtex noshow">
+<pre>
+  @article{madotto2018mem2seq,
+    title={Mem2Seq: Effectively Incorporating Knowledge Bases into End-to-End Task-Oriented Dialog Systems},
+    author={Madotto, Andrea and Wu, Chien-Sheng and Fung, Pascale},
+    journal={arXiv preprint arXiv:1804.08217},
+    year={2018}
+  }
+</pre>
+</div>
+</li>
+
+
+    <!-- Item: ICASSP -->
+    <li ><p>
+    Chien-Sheng Wu, Madotto Andrea, Genta Winata, and Pascale Fung
+    <br><b>End-to-End Dynamic Query Memory Network for Entity-Value Independent Task-Oriented Dialog</b><br>
+<i>IEEE-ICASSP 2018</i>
+
+<br />
+<a href="https://2018.ieeeicassp.org/Papers/ViewPapers_MS.asp?PaperNum=3749" target="_blank">[PDF]</a> 
+<a href="" target="_blank">[CODE]</a>
+<a href="javascript:toggleBibtex('ICASSP2018')">[BibTeX]</a>
+</p>
+<div id="bib_ICASSP2018" class="bibtex noshow">
+<pre>
+  @article{2801-18,
+    url = {http://sigport.org/2801},
+    author = {Chien-Sheng Wu; Andrea Madotto; Genta Winata; Pascale Fung },
+    publisher = {IEEE SigPort},
+    title = {End-to-End Dynamic Query Memory Network for Entity-Value Independent Task-Oriented Dialog},
+    year = {2018} }
+</pre>
+</div>
+</li>
+
+
+
+
+</ul>
+
+<h4 style="margin-bottom:0px;padding-top:10px;">Top-Tier Journal</h4>
+
+<!-- Generated from JabRef by PubList by Truong Nghiem at 10:08 on 2017.01.16. -->
+<ul class="biblist">
+<!-- Item: NATURE -->
+<li ><p>
+  Madotto Andrea, Liu Jiming<br><b>Super-Spreader Identification Using Meta-Centrality</b><br>
+  <i>Nature Scientific Report </i>, 6, 38994, 2016.
+  <br />
+  <a href="http://www.nature.com/articles/srep38994" target="_blank">[PDF]</a>
+  <a href="javascript:toggleBibtex('madotto2016super')">[BibTeX]</a>
+  </p>
+  <div id="bib_madotto2016super" class="bibtex noshow">
+  <pre>
+    @article{madotto2016super,
+      title={Super-Spreader Identification Using Meta-Centrality},
+      author={Madotto, Andrea and Liu, Jiming},
+      journal={Scientific reports},
+      volume={6},
+      pages={38994},
+      year={2016},
+      publisher={Nature Publishing Group}
+    }
+  </pre>
+  </div>
+  </li>
+  
+
+</ul>
+
+
+<h4 style="margin-bottom:0px;padding-top:10px;">Workshops</h4>
+
+<!-- Generated from JabRef by PubList by Truong Nghiem at 10:08 on 2017.01.16. -->
+<ul class="biblist">
+
+<!-- Item: DSTC6 -->
+<li ><p>
+  Chien-Sheng Wu, Madotto Andrea, Genta Winata, and Pascale Fung<br>
+  <b>End-to-End Recurrent Entity Network for Entity-Value Independent Goal-Oriented Dialog Learning</b><br>
+  <i>DSTC6</i>-2017.
+  <br />
+  <a href="http://workshop.colips.org/dstc6/papers/track1_paper02_wu.pdf" target="_blank">[PDF]</a>
+  <a href="https://github.com/jasonwu0731/RecurrentEntityNetwork" target="_blank">[CODE]</a>
+  <a href="javascript:toggleBibtex('DSTC6')">[BibTeX]</a>
+  </p>
+  <div id="bib_DSTC6" class="bibtex noshow">
+  <pre>
+    @article{wuend,
+      title={End-to-End Recurrent Entity Network for Entity-Value Independent Goal-Oriented Dialog Learning},
+      author={Wu, Chien-Sheng and Madotto, Andrea and Winata, Genta Indra and Fung, Pascale},
+      publisher = {Colips Workshop in Dialog System Technology Challenges},
+      year = {2017}
+    }
+  </pre>
+  </div>
+  </li>
+  
+
+<li ><p>
+    Madotto Andrea, Attardi Giuseppe<br>
+    <b>Question Dependent Recurrent Entity Network for Question Answering</b><br>
+    <i>NL4AI</i>-2017.
+    <br />
+    <a href="http://ceur-ws.org/Vol-1983/paper_07.pdf" target="_blank">[PDF]</a>
+    <a href="https://github.com/andreamad8/QDREN" target="_blank">[CODE]</a>
+    <a href="javascript:toggleBibtex('NL4AI')">[BibTeX]</a>
+    </p>
+    <div id="bib_NL4AI" class="bibtex noshow">
+    <pre>
+        @article{madotto2017question,
+          title={NL4AI: 1st Workshop on Natural Language for Artificial Intelligence},
+          author={Madotto, Andrea and Attardi, Giuseppe},
+          journal={http://ceur-ws.org/Vol-1983/paper_07.pdf},
+          year={2017}
+        }
+    </pre>
+    </div>
+    </li>
+
+    <li ><p>
+        Attardi Giuseppe, Carta Antonio, Errica Federico, Madotto Andrea, and Pannitto Ludovica<br>
+        <b>Fa3l at semeval-2017 task 3: A three embeddings recurrent neural network for question answering</b><br>
+        <i>SemEval</i>-2017.
+        <br />
+        <a href="http://www.aclweb.org/anthology/S17-2048" target="_blank">[PDF]</a>
+        <a href="https://github.com/AntonioCarta/ThreeRNN" target="_blank">[CODE]</a>
+        <a href="javascript:toggleBibtex('semeval')">[BibTeX]</a>
+        </p>
+        <div id="bib_semeval" class="bibtex noshow">
+        <pre>
+            @InProceedings{attardi-EtAl:2017:SemEval,
+              author    = {Attardi, Giuseppe  and  Carta, Antonio  and  Errica, Federico  and  Madotto, Andrea  and  Pannitto, Ludovica},
+              title     = {FA3L at SemEval-2017 Task 3: A ThRee Embeddings Recurrent Neural Network for Question Answering},
+              booktitle = {Proceedings of the 11th International Workshop on Semantic Evaluation (SemEval-2017)},
+              month     = {August},
+              year      = {2017},
+              address   = {Vancouver, Canada},
+              publisher = {Association for Computational Linguistics},
+              pages     = {299--304},
+              abstract  = {In this paper we present ThReeNN, a model for Community Question Answering,
+              Task 3, of SemEval-2017. The proposed model exploits both syntactic and
+              semantic information to build a single and meaningful embedding space. Using a
+              dependency parser in combination with word embeddings, the model creates
+              sequences of inputs for a Recurrent Neural Network, which are then used for the
+              ranking purposes of the Task. The score obtained on the official test data
+              shows promising results.},
+              url       = {http://www.aclweb.org/anthology/S17-2048}
+            }            
+        </pre>
+        </div>
+        </li>
+
+        <li ><p>
+            Chiancone Andrea, Madotto Andrea<br>
+            <b>A Multistrain Bacterial Model for Link Prediction</b><br>
+            <i>ICNC</i>-2016.
+            <br />
+            <a href="http://dx.doi.org/10.1109/ICNC.2015.7378141" target="_blank">[PDF]</a>
+            <a href="javascript:toggleBibtex('chiancone2015multistrain')">[BibTeX]</a>
+            </p>
+            <div id="bib_chiancone2015multistrain" class="bibtex noshow">
+            <pre>
+                @inproceedings{chiancone2015multistrain,
+                  title={A multistrain bacterial model for link prediction andrea chiancone},
+                  author={Chiancone, Andrea and Milani, Alfredo and Poggioni, Valentina and Pallottelli, Simonetta and Madotto, Andrea and Franzoni, Valentina},
+                  booktitle={Natural Computation (ICNC), 2015 11th International Conference on},
+                  pages={1075--1079},
+                  year={2015},
+                  organization={IEEE}
+                }           
+            </pre>
+            </div>
+            </li>
+</ul>
+
+
+
+
+    
+<h4 style="margin-bottom:0px;padding-top:20px;">Written Theses</h4>
+    
+    <!-- Generated from JabRef by PubList by Truong Nghiem at 06:25 on 2015.07.08. -->
+    <ul class="biblist">
+        <!-- Item: Pont-Tuset2014 -->
+        <li ><p>
+            M.Sc thesis<br>
+            <b>Question Dependent Recurrent Entity Network for Question Answering</b><br>
+            University of Pisa, 2017
+            
+            <br />
+            <a href="https://etd.adm.unipi.it/t/etd-06192017-100155/"  target="_blank">[PDF]</a>
+            <a href="javascript:toggleBibtex('Madotto2017')">[BibTeX]</a>
+            
+            </p>
+            <div id="bib_Madotto2017" class="bibtex noshow">
+                <pre>@phdthesis{Madotto2017,
+                      author = {Andrea Madotto},
+                      title = {Question Dependent Recurrent Entity Network for Question Answering},
+                      school = {University of Pisa},
+                      year = {2017}
+}</pre>
+            </div>
+        </li>
+
+                <!-- Item: Pont-Tuset2009 -->
+        <li ><p>
+            B.Sc. thesis<br>
+            <b>Facility location problem in a bi-dimensional mesh</b>
+            <br>
+            University of Perugia, 2015
+            <br />
+            <a href="https://www.dropbox.com/s/bzp26vcj9hlqlxz/Bachelor%27s%20Thesis%20%5BITA%20version%5D.pdf?dl=0"  target="_blank">[ITA-PDF]</a>
+            <a href="javascript:toggleBibtex('Madotto2014')">[BibTeX]</a>
+            </p>
+            <div id="bib_Madotto2014" class="bibtex noshow">
+                <pre>@BachelorThesis{Madotto2014,
+                    author = {Andrea Madotto},
+                    title = {Facility location problem in a bi-dimensional mesh},
+                    school = {University of Perugia},
+                    year = {2015}
+}</pre>
+            </div>
+        </li>
+    </ul>
+    
+    
+    
+    
+    
+    
+
+    </div><!-- /.article-wrap -->
+    {% if site.disqus_shortname and page.comments %}
+      <section id="disqus_thread"></section><!-- /#disqus_thread -->
+    {% endif %}
+  </article>
+</div><!-- /#index -->
+<div class="footer-wrap">
+  <footer>
+    {% include _footer.html %}
+  </footer>
+</div><!-- /.footer-wrap -->
+
+{% include _scripts.html %}          
+
+</body>
+</html>
