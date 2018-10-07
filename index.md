@@ -7,7 +7,7 @@ image:
   # feature: van.jpg
 ---
 
-I am a PhD in Electronic & Computer Engineering at [The Hong Kong University of Science and Technology](www.ust.hk) and part of the Centre for Artificial Intelligence Research (CAiRE).
+I am a PhD candidate in Electronic & Computer Engineering at [The Hong Kong University of Science and Technology](www.ust.hk) and part of the Centre for Artificial Intelligence Research (CAiRE).
 
 <br/>
 I was born in [Perugia](https://en.wikipedia.org/wiki/Perugia), where I received my Bachelor’s Degree in Computer Science at the [University of Perugia](https://www.unipg.it/en/). After that, I moved to [Hong Kong](https://en.wikipedia.org/wiki/Hong_Kong), to study for my first Master Degree. Afterwards, I moved back to Italy  where I obtained my second Master Degree in Computer Science at the [University of Pisa](https://en.wikipedia.org/wiki/University_of_Pisa). Currenly, I am back to Hong Kong for my PhD studies at The Hong Kong University of Science and Technology.  
