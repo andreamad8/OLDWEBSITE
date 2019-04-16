@@ -7,7 +7,8 @@ modified: 24-5-2018
 comments: false
 ---
 
-"We build our computer (systems) the way we build our cities: over time, without a plan, on top of ruins." - Ellen Ullman
+"There can't be beauty and utility? " - Leonardo da Vinci
+<!-- "We build our computer (systems) the way we build our cities: over time, without a plan, on top of ruins." - Ellen Ullman -->
 <br>
 <br><br>
 <p align="center"><img src="{{ site.url }}/images/CV/book.png" alt="Working Experience" width="85" height="85"></p>
