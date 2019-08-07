@@ -18,3 +18,6 @@ My research interests are: [Learning to Learn](http://people.idsia.ch/~juergen/m
 <br/>
 I am also a reviewer for NAACL2019, ACL2019, EMNLP2019 and Journal of Natural Language Engineering.
 
+<br/>
+<h1>News</h1>
+Our [TRADE](https://www.aclweb.org/anthology/P19-1078) paper won the [Outstanding Paper](http://www.acl2019.org/EN/winners-of-acl-2019-best-paper-awards.xhtml) at ACL 2019!
