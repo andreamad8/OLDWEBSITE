@@ -19,7 +19,12 @@ My research interests are: [Learning to Learn](http://people.idsia.ch/~juergen/m
 I am also a reviewer for NAACL2019, ACL2019, EMNLP2019 and Journal of Natural Language Engineering.
 
 <br/>
+
 <h1>News</h1>
+- [PPLM](https://transformer.huggingface.co/model/pplm) got accepted in [ICLR 2019](https://openreview.net/pdf?id=H1edEyBKDS)
+<br/>
+- [Attention over Parameters](http://alborz-geramifard.com/workshops/neurips19-Conversational-AI/Papers/15.pdf) won the [Best Paper Award](http://alborz-geramifard.com/workshops/neurips19-Conversational-AI/Main.html) at NeurIPS 2019 ConversationalAI Workshop. 
+<br/>
 - 3 papers accepted at EMNLP2019!
 <br/>
 - Our [TRADE](https://www.aclweb.org/anthology/P19-1078) paper won the [Outstanding Paper Award](http://www.acl2019.org/EN/winners-of-acl-2019-best-paper-awards.xhtml) at ACL 2019!
