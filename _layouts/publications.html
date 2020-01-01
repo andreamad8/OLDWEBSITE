@@ -9,9 +9,9 @@
 
 <body class="page">
 <style>
-    /*********************************
-     The list of publication items
-     *********************************/
+/*********************************
+The list of publication items
+*********************************/
 /* The list of items */
 .biblist { }
 
@@ -22,63 +22,63 @@
 
 
 /*************************************
- The box that contain BibTeX code
- *************************************/
+The box that contain BibTeX code
+*************************************/
 div.noshow { display: none; }
 div.bibtex {
-	margin-right: 0%;
-	margin-top: 1.2em;
-	margin-bottom: 1em;
-	border: 1px solid silver;
-	padding: 0em 1em;
-	background: #ffffee;
+margin-right: 0%;
+margin-top: 1.2em;
+margin-bottom: 1em;
+border: 1px solid silver;
+padding: 0em 1em;
+background: #ffffee;
 }
 div.bibtex pre { font-size: 75%; overflow: auto;  width: 100%; padding: 0em 0em;}</style>
 <script type="text/javascript">
-    <!--
-    // Toggle Display of BibTeX
-    function toggleBibtex(articleid) {
-        var bib = document.getElementById('bib_'+articleid);
-        if (bib) {
-            if(bib.className.indexOf('bibtex') != -1) {
-                bib.className.indexOf('noshow') == -1?bib.className = 'bibtex noshow':bib.className = 'bibtex';
-            }
-        } else {
-            return;
-        }
-    }
+<!--
+// Toggle Display of BibTeX
+function toggleBibtex(articleid) {
+var bib = document.getElementById('bib_'+articleid);
+if (bib) {
+if(bib.className.indexOf('bibtex') != -1) {
+bib.className.indexOf('noshow') == -1?bib.className = 'bibtex noshow':bib.className = 'bibtex';
+}
+} else {
+return;
+}
+}
 -->
-    </script>
+</script>
 
 {% include _browser-upgrade.html %}
 
 {% include _navigation.html %}
 
 {% if page.image.feature %}
-  <div class="image-wrap">
-  <img src=
-    {% if page.image.feature contains 'http://' %}
-      "{{ page.image.feature }}"
-    {% elsif page.image.feature contains 'https://' %}
-      "{{ page.image.feature }}"
-    {% else %}
-      "{{ site.url }}/images/{{ page.image.feature }}"
-    {% endif %}
-  alt="{{ page.title }} feature image">
-  {% if page.image.credit %}
-    <span class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></span>
-  {% endif %}
-  </div><!-- /.image-wrap -->
+<div class="image-wrap">
+<img src=
+{% if page.image.feature contains 'http://' %}
+"{{ page.image.feature }}"
+{% elsif page.image.feature contains 'https://' %}
+"{{ page.image.feature }}"
+{% else %}
+"{{ site.url }}/images/{{ page.image.feature }}"
+{% endif %}
+alt="{{ page.title }} feature image">
+{% if page.image.credit %}
+<span class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></span>
+{% endif %}
+</div><!-- /.image-wrap -->
 {% endif %}
 
 <div id="main" role="main">
-  <div class="article-author-side">
-    {% include _author-bio.html %}
-  </div>
-  <article>
-    <h1>{{ page.title }}</h1>
-    <div class="article-wrap">
-      {{ content }}
+<div class="article-author-side">
+{% include _author-bio.html %}
+</div>
+<article>
+<h1>{{ page.title }}</h1>
+<div class="article-wrap">
+{{ content }}
 
 
 
@@ -87,29 +87,29 @@ div.bibtex pre { font-size: 75%; overflow: auto;  width: 100%; padding: 0em 0em;
 <ul class="biblist">
 
 
-  <li ><p>
-    Sumanth Dathathri, Andrea Madotto, Janice Lan, Jane Hung, Eric Frank, Piero Molino, Jason Yosinski, Rosanne Liu<br><b>Plug and Play Language Models: a Simple Approach to Controlled Text Generation</b><br>
-    <i>ICLR 2020</i>
-    <br />
-    <a href="https://openreview.net/pdf?id=H1edEyBKDS" target="_blank">[PDF]</a>
-    <a href="https://github.com/uber-research/PPLM"  target="_blank">[CODE]</a>
-    <a href="https://transformer.huggingface.co/model/pplm"  target="_blank">[DEMO]</a>
-    <a href="https://www.technologyreview.com/s/614961/ai-language-gpt-2-tame-controllable-uber/"  target="_blank">[MIT_REVIEW]</a>
-    <a href="javascript:toggleBibtex('Dathathri2020Plug')">[BibTeX]</a>
-    </p>
-    <div id="bib_Dathathri2020Plug" class="bibtex noshow">
-    <pre>
-      @inproceedings{
-        Dathathri2020Plug,
-        title={Plug and Play Language Models: a Simple Approach to Controlled Text Generation},
-        author={Sumanth Dathathri and Andrea Madotto and Janice Lan and Jane Hung and Eric Frank and Piero Molino and Jason Yosinski and Rosanne Liu},
-        booktitle={International Conference on Learning Representations},
-        year={2020},
-        url={https://openreview.net/forum?id=H1edEyBKDS}
-        }
-    </pre>
-    </div>
-    </li>
+<li ><p>
+Sumanth Dathathri, Andrea Madotto, Janice Lan, Jane Hung, Eric Frank, Piero Molino, Jason Yosinski, Rosanne Liu<br><b>Plug and Play Language Models: a Simple Approach to Controlled Text Generation</b><br>
+<i>ICLR 2020</i>
+<br />
+<a href="https://openreview.net/pdf?id=H1edEyBKDS" target="_blank">[PDF]</a>
+<a href="https://github.com/uber-research/PPLM"  target="_blank">[CODE]</a>
+<a href="https://transformer.huggingface.co/model/pplm"  target="_blank">[DEMO]</a>
+<a href="https://www.technologyreview.com/s/614961/ai-language-gpt-2-tame-controllable-uber/"  target="_blank">[MIT_REVIEW]</a>
+<a href="javascript:toggleBibtex('Dathathri2020Plug')">[BibTeX]</a>
+</p>
+<div id="bib_Dathathri2020Plug" class="bibtex noshow">
+<pre>
+@inproceedings{
+Dathathri2020Plug,
+title={Plug and Play Language Models: a Simple Approach to Controlled Text Generation},
+author={Sumanth Dathathri and Andrea Madotto and Janice Lan and Jane Hung and Eric Frank and Piero Molino and Jason Yosinski and Rosanne Liu},
+booktitle={International Conference on Learning Representations},
+year={2020},
+url={https://openreview.net/forum?id=H1edEyBKDS}
+}
+</pre>
+</div>
+</li>
 
 
 
@@ -121,140 +121,140 @@ div.bibtex pre { font-size: 75%; overflow: auto;  width: 100%; padding: 0em 0em;
 
 
 
-    <li ><p>
-        Zhaojiang Lin, Andrea Madotto, Jamin Shin, Peng Xu and Pascale Fung<br><b>MoEL: Mixture of Empathetic Listeners</b><br>
-        <i>Long Paper EMNLP 2019 </i>
-        <br />
-        <a href="https://www.aclweb.org/anthology/D19-1012.pdf" target="_blank">[PDF]</a>
-        <a href="https://github.com/HLTCHKUST/MoEL"  target="_blank">[CODE]</a>
-        <a href="javascript:toggleBibtex('lin2019moel')">[BibTeX]</a>
-        </p>
-        <div id="bib_lin2019moel" class="bibtex noshow">
-        <pre>
-          @inproceedings{lin2019moel,
-            title={MoEL: Mixture of Empathetic Listeners},
-            author={Lin, Zhaojiang and Madotto, Andrea and Shin, Jamin and Xu, Peng and Fung, Pascale},
-            booktitle={Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)},
-            pages={121--132},
-            year={2019}
-          }
-        </pre>
-        </div>
-    </li>
+<li ><p>
+Zhaojiang Lin, Andrea Madotto, Jamin Shin, Peng Xu and Pascale Fung<br><b>MoEL: Mixture of Empathetic Listeners</b><br>
+<i>EMNLP 2019 </i>
+<br />
+<a href="https://www.aclweb.org/anthology/D19-1012.pdf" target="_blank">[PDF]</a>
+<a href="https://github.com/HLTCHKUST/MoEL"  target="_blank">[CODE]</a>
+<a href="javascript:toggleBibtex('lin2019moel')">[BibTeX]</a>
+</p>
+<div id="bib_lin2019moel" class="bibtex noshow">
+<pre>
+@inproceedings{lin2019moel,
+title={MoEL: Mixture of Empathetic Listeners},
+author={Lin, Zhaojiang and Madotto, Andrea and Shin, Jamin and Xu, Peng and Fung, Pascale},
+booktitle={Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)},
+pages={121--132},
+year={2019}
+}
+</pre>
+</div>
+</li>
 
-    <li ><p>
-        Zihan Liu, Jamin Shin, Yan Xu, Genta Indra Winata, Peng Xu, Andrea Madotto and Pascale Fung<br><b>Zero-shot Cross-lingual Dialogue Systems with Transferable Latent Variables</b><br>
-        <i>Short Paper EMNLP 2019 </i>
-        <br />
-        <a href="https://www.aclweb.org/anthology/D19-1129.pdf" target="_blank">[PDF]</a>
-        <a href="https://github.com/zliucr/Crosslingual-NLU"  target="_blank">[CODE]</a>
-        <a href="javascript:toggleBibtex('liu2019zero')">[BibTeX]</a>
-        </p>
-        <div id="bib_liu2019zero" class="bibtex noshow">
-        <pre>
-          @inproceedings{liu2019zero,
-            title={Zero-shot Cross-lingual Dialogue Systems with Transferable Latent Variables},
-            author={Liu, Zihan and Shin, Jamin and Xu, Yan and Winata, Genta Indra and Xu, Peng and Madotto, Andrea and Fung, Pascale},
-            booktitle={Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)},
-            pages={1297--1303},
-            year={2019}
-          }          
-        </pre>
-        </div>
-    </li>
+<li ><p>
+Zihan Liu, Jamin Shin, Yan Xu, Genta Indra Winata, Peng Xu, Andrea Madotto and Pascale Fung<br><b>Zero-shot Cross-lingual Dialogue Systems with Transferable Latent Variables</b><br>
+<i>EMNLP 2019 </i>
+<br />
+<a href="https://www.aclweb.org/anthology/D19-1129.pdf" target="_blank">[PDF]</a>
+<a href="https://github.com/zliucr/Crosslingual-NLU"  target="_blank">[CODE]</a>
+<a href="javascript:toggleBibtex('liu2019zero')">[BibTeX]</a>
+</p>
+<div id="bib_liu2019zero" class="bibtex noshow">
+<pre>
+@inproceedings{liu2019zero,
+title={Zero-shot Cross-lingual Dialogue Systems with Transferable Latent Variables},
+author={Liu, Zihan and Shin, Jamin and Xu, Yan and Winata, Genta Indra and Xu, Peng and Madotto, Andrea and Fung, Pascale},
+booktitle={Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)},
+pages={1297--1303},
+year={2019}
+}          
+</pre>
+</div>
+</li>
 
-  <li ><p>
-    Peng Xu, Chien-Sheng Wu, Andrea Madotto and Pascale Fung<br><b>Clickbait? Sensational Headline Generation with Auto-tuned Reinforcement Learning</b><br>
-    <i>Long Paper EMNLP 2019 </i>
-    <br />
-    <a href="https://www.aclweb.org/anthology/D19-1303.pdf" target="_blank">[PDF]</a>
-    <a href="https://github.com/HLTCHKUST/sensational_headline"  target="_blank">[CODE]</a>
-    <a href="javascript:toggleBibtex('xu2019clickbait')">[BibTeX]</a>
-    </p>
-    <div id="bib_xu2019clickbait" class="bibtex noshow">
-    <pre>
-      @inproceedings{xu2019clickbait,
-        title={Clickbait? Sensational Headline Generation with Auto-tuned Reinforcement Learning},
-        author={Xu, Peng and Wu, Chien-Sheng and Madotto, Andrea and Fung, Pascale},
-        booktitle={Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)},
-        pages={3056--3066},
-        year={2019}
-      }
-    </pre>
-    </div>
-    </li>
+<li ><p>
+Peng Xu, Chien-Sheng Wu, Andrea Madotto and Pascale Fung<br><b>Clickbait? Sensational Headline Generation with Auto-tuned Reinforcement Learning</b><br>
+<i>EMNLP 2019 </i>
+<br />
+<a href="https://www.aclweb.org/anthology/D19-1303.pdf" target="_blank">[PDF]</a>
+<a href="https://github.com/HLTCHKUST/sensational_headline"  target="_blank">[CODE]</a>
+<a href="javascript:toggleBibtex('xu2019clickbait')">[BibTeX]</a>
+</p>
+<div id="bib_xu2019clickbait" class="bibtex noshow">
+<pre>
+@inproceedings{xu2019clickbait,
+title={Clickbait? Sensational Headline Generation with Auto-tuned Reinforcement Learning},
+author={Xu, Peng and Wu, Chien-Sheng and Madotto, Andrea and Fung, Pascale},
+booktitle={Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP)},
+pages={3056--3066},
+year={2019}
+}
+</pre>
+</div>
+</li>
 
-    <li ><p>
-      Genta Indra Winata, Andrea Madotto, Chien-Sheng Wu, Pascale Fung<br><b>Code-Switched Language Models Using Neural Based Synthetic Data from Parallel Sentences</b><br>
-      <i>CoNLL 2019 </i>
-      <br />
-      <a href="https://www.aclweb.org/anthology/K19-1026.pdf" target="_blank">[PDF]</a>
-      <!-- <a href="https://github.com/HLTCHKUST/sensational_headline"  target="_blank">[CODE]</a> -->
-      <a href="javascript:toggleBibtex('winata2019code')">[BibTeX]</a>
-      </p>
-      <div id="bib_winata2019code" class="bibtex noshow">
-      <pre>
-        @inproceedings{winata2019code,
-          title={Code-Switched Language Models Using Neural Based Synthetic Data from Parallel Sentences},
-          author={Winata, Genta Indra and Madotto, Andrea and Wu, Chien-Sheng and Fung, Pascale},
-          booktitle={Proceedings of the 23rd Conference on Computational Natural Language Learning (CoNLL)},
-          pages={271--280},
-          year={2019}
-        }
-      </pre>
-      </div>
-      </li>
+<li ><p>
+Genta Indra Winata, Andrea Madotto, Chien-Sheng Wu, Pascale Fung<br><b>Code-Switched Language Models Using Neural Based Synthetic Data from Parallel Sentences</b><br>
+<i>CoNLL 2019 </i>
+<br />
+<a href="https://www.aclweb.org/anthology/K19-1026.pdf" target="_blank">[PDF]</a>
+<!-- <a href="https://github.com/HLTCHKUST/sensational_headline"  target="_blank">[CODE]</a> -->
+<a href="javascript:toggleBibtex('winata2019code')">[BibTeX]</a>
+</p>
+<div id="bib_winata2019code" class="bibtex noshow">
+<pre>
+@inproceedings{winata2019code,
+title={Code-Switched Language Models Using Neural Based Synthetic Data from Parallel Sentences},
+author={Winata, Genta Indra and Madotto, Andrea and Wu, Chien-Sheng and Fung, Pascale},
+booktitle={Proceedings of the 23rd Conference on Computational Natural Language Learning (CoNLL)},
+pages={271--280},
+year={2019}
+}
+</pre>
+</div>
+</li>
 
-    <li ><p>
-        Andrea Madotto, Zhaojiang Lin, Chien-Sheng Wu, Pascale Fung<br><b>Personalizing Dialogue Agents via Meta-Learning</b><br>
-        <i>Short Paper ACL 2019 </i>
-        <br />
-        <a href="https://www.aclweb.org/anthology/P19-1542" target="_blank">[PDF]</a>
-        <a href="https://github.com/HLTCHKUST/PAML"  target="_blank">[CODE]</a>
-        <a href="javascript:toggleBibtex('madotto2019personalizing')">[BibTeX]</a>
-        </p>
-        <div id="bib_madotto2019personalizing" class="bibtex noshow">
-        <pre>
-          @inproceedings{madotto2019personalizing,
-            title={Personalizing Dialogue Agents via Meta-Learning},
-            author={Madotto, Andrea and Lin, Zhaojiang and Wu, Chien-Sheng and Fung, Pascale},
-            booktitle={Proceedings of the 57th Conference of the Association for Computational Linguistics},
-            pages={5454--5459},
-            year={2019}
-          }
-        </pre>
-        </div>
-        </li>
+<li ><p>
+Andrea Madotto, Zhaojiang Lin, Chien-Sheng Wu, Pascale Fung<br><b>Personalizing Dialogue Agents via Meta-Learning</b><br>
+<i>ACL 2019 </i>
+<br />
+<a href="https://www.aclweb.org/anthology/P19-1542" target="_blank">[PDF]</a>
+<a href="https://github.com/HLTCHKUST/PAML"  target="_blank">[CODE]</a>
+<a href="javascript:toggleBibtex('madotto2019personalizing')">[BibTeX]</a>
+</p>
+<div id="bib_madotto2019personalizing" class="bibtex noshow">
+<pre>
+@inproceedings{madotto2019personalizing,
+title={Personalizing Dialogue Agents via Meta-Learning},
+author={Madotto, Andrea and Lin, Zhaojiang and Wu, Chien-Sheng and Fung, Pascale},
+booktitle={Proceedings of the 57th Conference of the Association for Computational Linguistics},
+pages={5454--5459},
+year={2019}
+}
+</pre>
+</div>
+</li>
 <!-- Item: ACL2019 -->
 <li ><p>
-  Chien-Sheng Wu, Andrea Madotto, Ehsan Hosseini-Asl, Caiming Xiong, Richard Socher, Pascale Fung<br><b>Transferable Multi-Domain State Generator for Task-Oriented Dialogue
-    Systems</b><br>
-  <i>Long Paper ACL 2019 [<b> Outstanding Paper Award - 0.1% of the paper </b>] </i>
-  <br />
-  <a href="http://arxiv.org/abs/1905.08743" target="_blank">[PDF]</a>
-  <a href="https://github.com/jasonwu0731/trade-dst"  target="_blank">[CODE]</a>
-  <a href="javascript:toggleBibtex('WuTradeDST2019')">[BibTeX]</a>
-  </p>
-  <div id="bib_WuTradeDST2019" class="bibtex noshow">
-  <pre>
-  @InProceedings{WuTradeDST2019,
-    author = "Wu, Chien-Sheng and Madotto, Andrea and Hosseini-Asl, Ehsan and Xiong, Caiming and Socher, Richard and Fung, Pascale",
-    title = 	"Transferable Multi-Domain State Generator for Task-Oriented Dialogue Systems",
-    booktitle = 	"Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
-    year = 	"2019",
-    publisher = "Association for Computational Linguistics"
-  }
-  </pre>
-  </div>
-  </li>
+Chien-Sheng Wu, Andrea Madotto, Ehsan Hosseini-Asl, Caiming Xiong, Richard Socher, Pascale Fung<br><b>Transferable Multi-Domain State Generator for Task-Oriented Dialogue
+Systems</b><br>
+<i>ACL 2019 [<b> Outstanding Paper Award - 0.1% of the paper </b>] </i>
+<br />
+<a href="http://arxiv.org/abs/1905.08743" target="_blank">[PDF]</a>
+<a href="https://github.com/jasonwu0731/trade-dst"  target="_blank">[CODE]</a>
+<a href="javascript:toggleBibtex('WuTradeDST2019')">[BibTeX]</a>
+</p>
+<div id="bib_WuTradeDST2019" class="bibtex noshow">
+<pre>
+@InProceedings{WuTradeDST2019,
+author = "Wu, Chien-Sheng and Madotto, Andrea and Hosseini-Asl, Ehsan and Xiong, Caiming and Socher, Richard and Fung, Pascale",
+title = 	"Transferable Multi-Domain State Generator for Task-Oriented Dialogue Systems",
+booktitle = 	"Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+year = 	"2019",
+publisher = "Association for Computational Linguistics"
+}
+</pre>
+</div>
+</li>
 
-  <!-- Item: ACL2018 -->
+<!-- Item: ACL2018 -->
 
 
 <!-- Item: ACL2018 -->
 <li ><p>
 Andrea Madotto, Chien-Sheng Wu, and Pascale Fung<br><b>Mem2Seq: Effectively Incorporating Knowledge Bases into End-to-End Task-Oriented Dialog Systems</b><br>
-<i>Long Paper ACL 2018 </i>
+<i>ACL 2018 </i>
 <br />
 <a href="https://www.aclweb.org/anthology/P18-1136" target="_blank">[PDF]</a> <a href="https://github.com/HLTCHKUST/Mem2Seq"  target="_blank">[CODE]</a>
 <a href="javascript:toggleBibtex('P18-1136')">[BibTeX]</a>
@@ -262,24 +262,24 @@ Andrea Madotto, Chien-Sheng Wu, and Pascale Fung<br><b>Mem2Seq: Effectively Inco
 <div id="bib_P18-1136" class="bibtex noshow">
 <pre>
 @InProceedings{P18-1136,
-  author = "Madotto, Andrea and Wu, Chien-Sheng and Fung, Pascale",
-  title = "Mem2Seq: Effectively Incorporating Knowledge Bases into End-to-End Task-Oriented Dialog Systems",
-  booktitle = "Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
-  year = "2018",
-  publisher = "Association for Computational Linguistics",
-  pages = "1468--1478",
-  location = "Melbourne, Australia",
-  url = "http://aclweb.org/anthology/P18-1136"
+author = "Madotto, Andrea and Wu, Chien-Sheng and Fung, Pascale",
+title = "Mem2Seq: Effectively Incorporating Knowledge Bases into End-to-End Task-Oriented Dialog Systems",
+booktitle = "Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+year = "2018",
+publisher = "Association for Computational Linguistics",
+pages = "1468--1478",
+location = "Melbourne, Australia",
+url = "http://aclweb.org/anthology/P18-1136"
 }
 </pre>
 </div>
 </li>
 
 
-    <!-- Item: ICASSP -->
-    <li ><p>
-    Chien-Sheng Wu, Andrea Madotto, Genta Winata, and Pascale Fung
-    <br><b>End-to-End Dynamic Query Memory Network for Entity-Value Independent Task-Oriented Dialog</b><br>
+<!-- Item: ICASSP -->
+<li ><p>
+Chien-Sheng Wu, Andrea Madotto, Genta Winata, and Pascale Fung
+<br><b>End-to-End Dynamic Query Memory Network for Entity-Value Independent Task-Oriented Dialog</b><br>
 <i>IEEE-ICASSP 2018</i>
 
 <br />
@@ -290,12 +290,12 @@ Andrea Madotto, Chien-Sheng Wu, and Pascale Fung<br><b>Mem2Seq: Effectively Inco
 <div id="bib_wu2018end" class="bibtex noshow">
 <pre>
 @inproceedings{wu2018end,
-  title={End-to-End Dynamic Query Memory Network for Entity-Value Independent Task-Oriented Dialog},
-  author={Wu, Chien-Sheng and Madotto, Andrea and Winata, Genta Indra and Fung, Pascale},
-  booktitle={2018 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
-  pages={6154--6158},
-  year={2018},
-  organization={IEEE}
+title={End-to-End Dynamic Query Memory Network for Entity-Value Independent Task-Oriented Dialog},
+author={Wu, Chien-Sheng and Madotto, Andrea and Winata, Genta Indra and Fung, Pascale},
+booktitle={2018 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+pages={6154--6158},
+year={2018},
+organization={IEEE}
 }
 </pre>
 </div>
@@ -312,26 +312,26 @@ Andrea Madotto, Chien-Sheng Wu, and Pascale Fung<br><b>Mem2Seq: Effectively Inco
 <ul class="biblist">
 <!-- Item: NATURE -->
 <li ><p>
-  Andrea Madotto, Liu Jiming<br><b>Super-Spreader Identification Using Meta-Centrality</b><br>
-  <i>Nature Scientific Report </i>, 6, 38994, 2016.
-  <br />
-  <a href="http://www.nature.com/articles/srep38994" target="_blank">[PDF]</a>
-  <a href="javascript:toggleBibtex('madotto2016super')">[BibTeX]</a>
-  </p>
-  <div id="bib_madotto2016super" class="bibtex noshow">
-  <pre>
-    @article{madotto2016super,
-      title={Super-Spreader Identification Using Meta-Centrality},
-      author={Madotto, Andrea and Liu, Jiming},
-      journal={Scientific reports},
-      volume={6},
-      pages={38994},
-      year={2016},
-      publisher={Nature Publishing Group}
-    }
-  </pre>
-  </div>
-  </li>
+Andrea Madotto, Liu Jiming<br><b>Super-Spreader Identification Using Meta-Centrality</b><br>
+<i>Nature Scientific Report </i>, 6, 38994, 2016.
+<br />
+<a href="http://www.nature.com/articles/srep38994" target="_blank">[PDF]</a>
+<a href="javascript:toggleBibtex('madotto2016super')">[BibTeX]</a>
+</p>
+<div id="bib_madotto2016super" class="bibtex noshow">
+<pre>
+@article{madotto2016super,
+title={Super-Spreader Identification Using Meta-Centrality},
+author={Madotto, Andrea and Liu, Jiming},
+journal={Scientific reports},
+volume={6},
+pages={38994},
+year={2016},
+publisher={Nature Publishing Group}
+}
+</pre>
+</div>
+</li>
 
 
 </ul>
@@ -342,409 +342,409 @@ Andrea Madotto, Chien-Sheng Wu, and Pascale Fung<br><b>Mem2Seq: Effectively Inco
 <!-- Generated from JabRef by PubList by Truong Nghiem at 10:08 on 2017.01.16. -->
 <ul class="biblist">
 
-  <li ><p>
-    Andrea Madotto, Zhaojiang Lin, Chien-Sheng Wu, Jamin Shin, Pascale Fung<br><b>Attention over Parameters for Dialogue Systems</b><br>
-    <i>NeurIPS 2019 ConvAI [<b>Best Paper Award</b>] </i>
-    <br />
-    <a href="http://alborz-geramifard.com/workshops/neurips19-Conversational-AI/Papers/15.pdf" target="_blank">[PDF]</a>
-    <a href=""  target="_blank">[CODE]</a>
-    <a href=""  target="_blank">[VIDEO]</a>
-    <a href=""  target="_blank">[SLIDES]</a>
-    <a href="javascript:toggleBibtex('')">[BibTeX]</a>
-    </p>
-    <div id="bib_" class="bibtex noshow">
-    <pre>
-    </pre>
-    </div>
-    </li>
-
-    
-
-  <li><p>
-    Chien-Sheng Wu, Andrea Madotto, Lin, Zhaojiang, Peng Xu, and  and Pascale Fung
-    <br>
-    <b>Getting To Know You: User Attribute Extraction from Dialogues</b><br>
-    <i>ACL ConvAI</i>-2019.
-    <br />
-    <a href="https://arxiv.org/abs/1908.09982" target="_blank">[PDF]</a>
-    <!-- <a href="https://github.com/HLTCHKUST/dialogue-emotion"  target="_blank">[CODE]</a> -->
-    <a href="javascript:toggleBibtex('winata2019effectiveness')">[BibTeX]</a>
-    </p>
-    <div id="bib_winata2019effectiveness" class="bibtex noshow">
-    <pre>
-      @article{wu2019getting,
-        title={Getting To Know You: User Attribute Extraction from Dialogues},
-        author={Wu, Chien-Sheng and Madotto, Andrea and Lin, Zhaojiang and Xu, Peng and Fung, Pascale},
-        journal={arXiv preprint arXiv:1908.04621},
-        year={2019}
-      }
-    </pre>
-    </div>
-    </li>
-
-
-  <li><p>
-    Genta Indra Winata, Andrea Madotto,  Jamin Shin,  Elham J. Barezi, and Pascale Fung
-    <br>
-    <b>On the Effectiveness of Low-Rank Matrix Factorization for LSTM Model Compression</b><br>
-    <i>PACLIC</i>-2019.
-    <br />
-    <a href="https://arxiv.org/abs/1908.09982" target="_blank">[PDF]</a>
-    <!-- <a href="https://github.com/HLTCHKUST/dialogue-emotion"  target="_blank">[CODE]</a> -->
-    <a href="javascript:toggleBibtex('winata2019effectiveness')">[BibTeX]</a>
-    </p>
-    <div id="bib_winata2019effectiveness" class="bibtex noshow">
-    <pre>
-      @article{winata2019effectiveness,
-        title={On the Effectiveness of Low-Rank Matrix Factorization for LSTM Model Compression},
-        author={Winata, Genta Indra and Madotto, Andrea and Shin, Jamin and Barezi, Elham J and Fung, Pascale},
-        journal={arXiv preprint arXiv:1908.09982},
-        year={2019}
-      }
-    </pre>
-    </div>
-    </li>
+<li ><p>
+Andrea Madotto, Zhaojiang Lin, Chien-Sheng Wu, Jamin Shin, Pascale Fung<br><b>Attention over Parameters for Dialogue Systems</b><br>
+<i>NeurIPS 2019 ConvAI [<b>Best Paper Award</b>] </i>
+<br />
+<a href="http://alborz-geramifard.com/workshops/neurips19-Conversational-AI/Papers/15.pdf" target="_blank">[PDF]</a>
+<a href=""  target="_blank">[CODE]</a>
+<a href=""  target="_blank">[VIDEO]</a>
+<a href=""  target="_blank">[SLIDES]</a>
+<a href="javascript:toggleBibtex('')">[BibTeX]</a>
+</p>
+<div id="bib_" class="bibtex noshow">
+<pre>
+</pre>
+</div>
+</li>
 
 
 
+<li><p>
+Chien-Sheng Wu, Andrea Madotto, Lin, Zhaojiang, Peng Xu, and  and Pascale Fung
+<br>
+<b>Getting To Know You: User Attribute Extraction from Dialogues</b><br>
+<i>ACL ConvAI</i>-2019.
+<br />
+<a href="https://arxiv.org/abs/1908.09982" target="_blank">[PDF]</a>
+<!-- <a href="https://github.com/HLTCHKUST/dialogue-emotion"  target="_blank">[CODE]</a> -->
+<a href="javascript:toggleBibtex('winata2019effectiveness')">[BibTeX]</a>
+</p>
+<div id="bib_winata2019effectiveness" class="bibtex noshow">
+<pre>
+@article{wu2019getting,
+title={Getting To Know You: User Attribute Extraction from Dialogues},
+author={Wu, Chien-Sheng and Madotto, Andrea and Lin, Zhaojiang and Xu, Peng and Fung, Pascale},
+journal={arXiv preprint arXiv:1908.04621},
+year={2019}
+}
+</pre>
+</div>
+</li>
 
 
-  <li><p>
-    Nayeon Lee, Andrea Madotto, and Pascale Fung.
-    <br>
-    <b>Exploring Social Bias in Chatbots using Stereotype Knowledge</b><br>
-    <i>Widening NLP ACL</i>-2019.
-    <br />
-    <a href="https://www.aclweb.org/anthology/W19-3655" target="_blank">[PDF]</a>
-    <!-- <a href="https://github.com/HLTCHKUST/dialogue-emotion"  target="_blank">[CODE]</a> -->
-    <a href="javascript:toggleBibtex('lee2019exploring')">[BibTeX]</a>
-    </p>
-    <div id="bib_lee2019exploring" class="bibtex noshow">
-    <pre>
-      @inproceedings{lee2019exploring,
-        title={Exploring Social Bias in Chatbots using Stereotype Knowledge},
-        author={Lee, Nayeon and Madotto, Andrea and Fung, Pascale},
-        booktitle={Proceedings of the 2019 Workshop on Widening NLP},
-        pages={177--180},
-        year={2019}
-      }
-    </pre>
-    </div>
-    </li>
+<li><p>
+Genta Indra Winata, Andrea Madotto,  Jamin Shin,  Elham J. Barezi, and Pascale Fung
+<br>
+<b>On the Effectiveness of Low-Rank Matrix Factorization for LSTM Model Compression</b><br>
+<i>PACLIC</i>-2019.
+<br />
+<a href="https://arxiv.org/abs/1908.09982" target="_blank">[PDF]</a>
+<!-- <a href="https://github.com/HLTCHKUST/dialogue-emotion"  target="_blank">[CODE]</a> -->
+<a href="javascript:toggleBibtex('winata2019effectiveness')">[BibTeX]</a>
+</p>
+<div id="bib_winata2019effectiveness" class="bibtex noshow">
+<pre>
+@article{winata2019effectiveness,
+title={On the Effectiveness of Low-Rank Matrix Factorization for LSTM Model Compression},
+author={Winata, Genta Indra and Madotto, Andrea and Shin, Jamin and Barezi, Elham J and Fung, Pascale},
+journal={arXiv preprint arXiv:1908.09982},
+year={2019}
+}
+</pre>
+</div>
+</li>
 
 
-  <li><p>
-    Lin, Zhaojiang, Andrea Madotto, Genta Indra Winata, Zihan Liu, Yan Xu, Cong Gao, and Pascale Fung.
-    <br>
-    <b>Learning to Learn Sales Prediction with Social Media Sentiment</b><br>
-    <i>FinNLP IJCAI</i>-2019.
-    <br />
-    <a href="https://www.researchgate.net/profile/Mingyu_Wan/publication/334441863_Sentence_Boundary_Detection_of_Financial_Data_with_Domain_Knowledge_Enhancement_and_Bilingual_Training/links/5d295cdf299bf1547cb1317a/Sentence-Boundary-Detection-of-Financial-Data-with-Domain-Knowledge-Enhancement-and-Bilingual-Training.pdf#page=57" target="_blank">[PDF]</a>
-    <!-- <a href="https://github.com/HLTCHKUST/dialogue-emotion"  target="_blank">[CODE]</a> -->
-    <a href="javascript:toggleBibtex('lin2019learning')">[BibTeX]</a>
-    </p>
-    <div id="bib_lin2019learning" class="bibtex noshow">
-    <pre>
-      @inproceedings{lin2019learning,
-        title={Learning to Learn Sales Prediction with Social Media Sentiment},
-        author={Lin, Zhaojiang and Madotto, Andrea and Winata, Genta Indra and Liu, Zihan and Xu, Yan and Gao, Cong and Fung, Pascale},
-        booktitle={The First Workshop on Financial Technology and Natural Language Processing in conjunction with IJCAI 2019},
-        pages={47},
-        year={2019}
-      }
-    </pre>
-    </div>
-    </li>
 
 
-  <li><p>
-    Jamin Shin, Peng Xu, Andrea Madotto, Pascale Fung
-    <br>
-    <b>HappyBot: Generating Empathetic Dialogue Responses by Improving User Experience Look-ahead</b><br>
-    <i>Arxiv</i>-2019.
-    <br />
-    <a href="https://www.aclweb.org/anthology/S19-2021" target="_blank">[PDF]</a>
-    <!-- <a href="https://github.com/HLTCHKUST/dialogue-emotion"  target="_blank">[CODE]</a> -->
-    <a href="javascript:toggleBibtex('shin2019happybot')">[BibTeX]</a>
-    </p>
-    <div id="bib_shin2019happybot" class="bibtex noshow">
-    <pre>
-      @article{shin2019happybot,
-        title={HappyBot: Generating Empathetic Dialogue Responses by Improving User Experience Look-ahead},
-        author={Shin, Jamin and Xu, Peng and Madotto, Andrea and Fung, Pascale},
-        journal={arXiv preprint arXiv:1906.08487},
-        year={2019}
-      }
-    </pre>
-    </div>
-    </li>
 
-  <li><p>
-    Genta Indra Winata, Andrea Madotto, Zhaojiang Lin, Jamin Shin, Yan Xu, Peng Xu, Pascale Fung
-    <br>
-    <b>CAiRE_HKUST at SemEval-2019 Task 3: Hierarchical Attention for Dialogue Emotion Classification</b><br>
-    <i>SemEval</i>-2019.
-    <br />
-    <a href="https://www.aclweb.org/anthology/S19-2021" target="_blank">[PDF]</a>
-    <a href="https://github.com/HLTCHKUST/dialogue-emotion"  target="_blank">[CODE]</a>
-    <a href="javascript:toggleBibtex('winata-etal-2019-caire')">[BibTeX]</a>
-    </p>
-    <div id="bib_winata-etal-2019-caire" class="bibtex noshow">
-    <pre>
-      @inproceedings{winata-etal-2019-caire,
-        title = "{CA}i{RE}{\_}{HKUST} at {S}em{E}val-2019 Task 3: Hierarchical Attention for Dialogue Emotion Classification",
-        author = "Winata, Genta Indra  and
-          Madotto, Andrea  and
-          Lin, Zhaojiang  and
-          Shin, Jamin  and
-          Xu, Yan  and
-          Xu, Peng  and
-          Fung, Pascale",
-        booktitle = "Proceedings of the 13th International Workshop on Semantic Evaluation",
-        month = jun,
-        year = "2019",
-        address = "Minneapolis, Minnesota, USA",
-        publisher = "Association for Computational Linguistics",
-        url = "https://www.aclweb.org/anthology/S19-2021",
-        pages = "142--147",
-        abstract = "Detecting emotion from dialogue is a challenge that has not yet been extensively surveyed. One could consider the emotion of each dialogue turn to be independent, but in this paper, we introduce a hierarchical approach to classify emotion, hypothesizing that the current emotional state depends on previous latent emotions. We benchmark several feature-based classifiers using pre-trained word and emotion embeddings, state-of-the-art end-to-end neural network models, and Gaussian processes for automatic hyper-parameter search. In our experiments, hierarchical architectures consistently give significant improvements, and our best model achieves a 76.77{\%} F1-score on the test set.",
-    }
-    </pre>
-    </div>
-    </li>
+<li><p>
+Nayeon Lee, Andrea Madotto, and Pascale Fung.
+<br>
+<b>Exploring Social Bias in Chatbots using Stereotype Knowledge</b><br>
+<i>Widening NLP ACL</i>-2019.
+<br />
+<a href="https://www.aclweb.org/anthology/W19-3655" target="_blank">[PDF]</a>
+<!-- <a href="https://github.com/HLTCHKUST/dialogue-emotion"  target="_blank">[CODE]</a> -->
+<a href="javascript:toggleBibtex('lee2019exploring')">[BibTeX]</a>
+</p>
+<div id="bib_lee2019exploring" class="bibtex noshow">
+<pre>
+@inproceedings{lee2019exploring,
+title={Exploring Social Bias in Chatbots using Stereotype Knowledge},
+author={Lee, Nayeon and Madotto, Andrea and Fung, Pascale},
+booktitle={Proceedings of the 2019 Workshop on Widening NLP},
+pages={177--180},
+year={2019}
+}
+</pre>
+</div>
+</li>
 
 
-  <li><p>
-    Jamin Shin, Andrea Madotto, Minjoon Seo, Pascale Fung
-    <br>
-    <b>End-to-End Question Answering Models for Goal-Oriented Dialog Learning</b><br>
-    <i>DSTC7</i>-2019.
-    <br />
-    <a href="http://workshop.colips.org/dstc7/papers/20.pdf" target="_blank">[PDF]</a>
-    <!-- <a href="https://github.com/HLTCHKUST/eigenvector-analysis"  target="_blank">[CODE]</a> -->
-    <a href="javascript:toggleBibtex('shin2019end')">[BibTeX]</a>
-    </p>
-    <div id="bib_shin2019end" class="bibtex noshow">
-    <pre>
-      @article{shin2019end,
-        title={End-to-End Question Answering Models for Goal-Oriented Dialog Learning},
-        author={Shin, Jamin and Madotto, Andrea and Seo, Minjoon and Fung, Pascale},
-        year={2019}
-      }
-    </pre>
-    </div>
-    </li>
+<li><p>
+Lin, Zhaojiang, Andrea Madotto, Genta Indra Winata, Zihan Liu, Yan Xu, Cong Gao, and Pascale Fung.
+<br>
+<b>Learning to Learn Sales Prediction with Social Media Sentiment</b><br>
+<i>FinNLP IJCAI</i>-2019.
+<br />
+<a href="https://www.researchgate.net/profile/Mingyu_Wan/publication/334441863_Sentence_Boundary_Detection_of_Financial_Data_with_Domain_Knowledge_Enhancement_and_Bilingual_Training/links/5d295cdf299bf1547cb1317a/Sentence-Boundary-Detection-of-Financial-Data-with-Domain-Knowledge-Enhancement-and-Bilingual-Training.pdf#page=57" target="_blank">[PDF]</a>
+<!-- <a href="https://github.com/HLTCHKUST/dialogue-emotion"  target="_blank">[CODE]</a> -->
+<a href="javascript:toggleBibtex('lin2019learning')">[BibTeX]</a>
+</p>
+<div id="bib_lin2019learning" class="bibtex noshow">
+<pre>
+@inproceedings{lin2019learning,
+title={Learning to Learn Sales Prediction with Social Media Sentiment},
+author={Lin, Zhaojiang and Madotto, Andrea and Winata, Genta Indra and Liu, Zihan and Xu, Yan and Gao, Cong and Fung, Pascale},
+booktitle={The First Workshop on Financial Technology and Natural Language Processing in conjunction with IJCAI 2019},
+pages={47},
+year={2019}
+}
+</pre>
+</div>
+</li>
+
+
+<li><p>
+Jamin Shin, Peng Xu, Andrea Madotto, Pascale Fung
+<br>
+<b>HappyBot: Generating Empathetic Dialogue Responses by Improving User Experience Look-ahead</b><br>
+<i>Arxiv</i>-2019.
+<br />
+<a href="https://www.aclweb.org/anthology/S19-2021" target="_blank">[PDF]</a>
+<!-- <a href="https://github.com/HLTCHKUST/dialogue-emotion"  target="_blank">[CODE]</a> -->
+<a href="javascript:toggleBibtex('shin2019happybot')">[BibTeX]</a>
+</p>
+<div id="bib_shin2019happybot" class="bibtex noshow">
+<pre>
+@article{shin2019happybot,
+title={HappyBot: Generating Empathetic Dialogue Responses by Improving User Experience Look-ahead},
+author={Shin, Jamin and Xu, Peng and Madotto, Andrea and Fung, Pascale},
+journal={arXiv preprint arXiv:1906.08487},
+year={2019}
+}
+</pre>
+</div>
+</li>
+
+<li><p>
+Genta Indra Winata, Andrea Madotto, Zhaojiang Lin, Jamin Shin, Yan Xu, Peng Xu, Pascale Fung
+<br>
+<b>CAiRE_HKUST at SemEval-2019 Task 3: Hierarchical Attention for Dialogue Emotion Classification</b><br>
+<i>SemEval</i>-2019.
+<br />
+<a href="https://www.aclweb.org/anthology/S19-2021" target="_blank">[PDF]</a>
+<a href="https://github.com/HLTCHKUST/dialogue-emotion"  target="_blank">[CODE]</a>
+<a href="javascript:toggleBibtex('winata-etal-2019-caire')">[BibTeX]</a>
+</p>
+<div id="bib_winata-etal-2019-caire" class="bibtex noshow">
+<pre>
+@inproceedings{winata-etal-2019-caire,
+title = "{CA}i{RE}{\_}{HKUST} at {S}em{E}val-2019 Task 3: Hierarchical Attention for Dialogue Emotion Classification",
+author = "Winata, Genta Indra  and
+Madotto, Andrea  and
+Lin, Zhaojiang  and
+Shin, Jamin  and
+Xu, Yan  and
+Xu, Peng  and
+Fung, Pascale",
+booktitle = "Proceedings of the 13th International Workshop on Semantic Evaluation",
+month = jun,
+year = "2019",
+address = "Minneapolis, Minnesota, USA",
+publisher = "Association for Computational Linguistics",
+url = "https://www.aclweb.org/anthology/S19-2021",
+pages = "142--147",
+abstract = "Detecting emotion from dialogue is a challenge that has not yet been extensively surveyed. One could consider the emotion of each dialogue turn to be independent, but in this paper, we introduce a hierarchical approach to classify emotion, hypothesizing that the current emotional state depends on previous latent emotions. We benchmark several feature-based classifiers using pre-trained word and emotion embeddings, state-of-the-art end-to-end neural network models, and Gaussian processes for automatic hyper-parameter search. In our experiments, hierarchical architectures consistently give significant improvements, and our best model achieves a 76.77{\%} F1-score on the test set.",
+}
+</pre>
+</div>
+</li>
+
+
+<li><p>
+Jamin Shin, Andrea Madotto, Minjoon Seo, Pascale Fung
+<br>
+<b>End-to-End Question Answering Models for Goal-Oriented Dialog Learning</b><br>
+<i>DSTC7</i>-2019.
+<br />
+<a href="http://workshop.colips.org/dstc7/papers/20.pdf" target="_blank">[PDF]</a>
+<!-- <a href="https://github.com/HLTCHKUST/eigenvector-analysis"  target="_blank">[CODE]</a> -->
+<a href="javascript:toggleBibtex('shin2019end')">[BibTeX]</a>
+</p>
+<div id="bib_shin2019end" class="bibtex noshow">
+<pre>
+@article{shin2019end,
+title={End-to-End Question Answering Models for Goal-Oriented Dialog Learning},
+author={Shin, Jamin and Madotto, Andrea and Seo, Minjoon and Fung, Pascale},
+year={2019}
+}
+</pre>
+</div>
+</li>
 
 <!-- Item: EMO2VEC -->
 <li><p>
-  Jamin Shin, Andrea Madotto, Pascale Fung
-  <br>
-  <b>Interpreting Word Embeddings with Eigenvector Analysis</b><br>
-  <i>NeurIPS IRASL Workshop</i>-2018.
-  <br />
-  <a href="https://openreview.net/forum?id=rJfJiR5ooX" target="_blank">[PDF]</a>
-  <a href="https://github.com/HLTCHKUST/eigenvector-analysis"  target="_blank">[CODE]</a>
-  <a href="javascript:toggleBibtex('shin2018interpreting')">[BibTeX]</a>
-  </p>
-  <div id="bib_shin2018interpreting" class="bibtex noshow">
-  <pre>
-    @article{shin2018interpreting,
-      title={Interpreting Word Embeddings with Eigenvector Analysis},
-      author={Shin, Jamin and Madotto, Andrea and Fung, Pascale},
-      year={2018}
-    }
-  </pre>
-  </div>
-  </li>
+Jamin Shin, Andrea Madotto, Pascale Fung
+<br>
+<b>Interpreting Word Embeddings with Eigenvector Analysis</b><br>
+<i>NeurIPS IRASL Workshop</i>-2018.
+<br />
+<a href="https://openreview.net/forum?id=rJfJiR5ooX" target="_blank">[PDF]</a>
+<a href="https://github.com/HLTCHKUST/eigenvector-analysis"  target="_blank">[CODE]</a>
+<a href="javascript:toggleBibtex('shin2018interpreting')">[BibTeX]</a>
+</p>
+<div id="bib_shin2018interpreting" class="bibtex noshow">
+<pre>
+@article{shin2018interpreting,
+title={Interpreting Word Embeddings with Eigenvector Analysis},
+author={Shin, Jamin and Madotto, Andrea and Fung, Pascale},
+year={2018}
+}
+</pre>
+</div>
+</li>
 
 
 
 <!-- Item: EMO2VEC -->
 <li><p>
-  Peng Xu, Andrea Madotto, Chien-Sheng Wu, Ji Ho Park, Pascale Fung
-  <br>
-  <b>Emo2Vec: Learning Generalized Emotion Representation by Multi-task Training</b><br>
-  <i>EMNLP WASSA Workshop</i>-2018.
-  <br />
-  <a href="https://arxiv.org/abs/1809.04505" target="_blank">[PDF]</a>
-  <a href="https://github.com/pxuab/emo2vec_wassa_paper"  target="_blank">[CODE]</a>
-  <a href="javascript:toggleBibtex('xu2018emo2vec')">[BibTeX]</a>
-  </p>
-  <div id="bib_xu2018emo2vec" class="bibtex noshow">
-  <pre>
-    @article{xu2018emo2vec,
-      title={Emo2Vec: Learning Generalized Emotion Representation by Multi-task Training},
-      author={Xu, Peng and Madotto, Andrea and Wu, Chien-Sheng and Park, Ji Ho and Fung, Pascale},
-      journal={arXiv preprint arXiv:1809.04505},
-      year={2018}
-    }
-  </pre>
-  </div>
-  </li>
+Peng Xu, Andrea Madotto, Chien-Sheng Wu, Ji Ho Park, Pascale Fung
+<br>
+<b>Emo2Vec: Learning Generalized Emotion Representation by Multi-task Training</b><br>
+<i>EMNLP WASSA Workshop</i>-2018.
+<br />
+<a href="https://arxiv.org/abs/1809.04505" target="_blank">[PDF]</a>
+<a href="https://github.com/pxuab/emo2vec_wassa_paper"  target="_blank">[CODE]</a>
+<a href="javascript:toggleBibtex('xu2018emo2vec')">[BibTeX]</a>
+</p>
+<div id="bib_xu2018emo2vec" class="bibtex noshow">
+<pre>
+@article{xu2018emo2vec,
+title={Emo2Vec: Learning Generalized Emotion Representation by Multi-task Training},
+author={Xu, Peng and Madotto, Andrea and Wu, Chien-Sheng and Park, Ji Ho and Fung, Pascale},
+journal={arXiv preprint arXiv:1809.04505},
+year={2018}
+}
+</pre>
+</div>
+</li>
 
 <!-- Item: CODE1 -->
 <li><p>
-  Genta Indra Winata, Andrea Madotto, Wu Chien-Sheng, Pascale Fung
-  <br>
-  <b>Code-Switching Language Modeling using Syntax-Aware Multi-Task Learning</b><br>
-  <i>ACL Code-Switching Workshop</i>-2018.
-  <br />
-  <a href="https://arxiv.org/pdf/1805.12070" target="_blank">[PDF]</a>
-  <a href="javascript:toggleBibtex('CS1')">[BibTeX]</a>
-  </p>
-  <div id="bib_CS1" class="bibtex noshow">
-  <pre>
-    @article{CS1,
-      title={Code-Switching Language Modeling using Syntax-Aware Multi-Task Learning},
-      author={Genta Indra Winata, Andrea Madotto, Wu Chien-Sheng, Pascale Fung},
-      publisher = {3rd Workshop in Computational Approaches in Linguistic Code-switching},
-      year = {2018}
-    }
-  </pre>
-  </div>
-  </li>
+Genta Indra Winata, Andrea Madotto, Wu Chien-Sheng, Pascale Fung
+<br>
+<b>Code-Switching Language Modeling using Syntax-Aware Multi-Task Learning</b><br>
+<i>ACL Code-Switching Workshop</i>-2018.
+<br />
+<a href="https://arxiv.org/pdf/1805.12070" target="_blank">[PDF]</a>
+<a href="javascript:toggleBibtex('CS1')">[BibTeX]</a>
+</p>
+<div id="bib_CS1" class="bibtex noshow">
+<pre>
+@article{CS1,
+title={Code-Switching Language Modeling using Syntax-Aware Multi-Task Learning},
+author={Genta Indra Winata, Andrea Madotto, Wu Chien-Sheng, Pascale Fung},
+publisher = {3rd Workshop in Computational Approaches in Linguistic Code-switching},
+year = {2018}
+}
+</pre>
+</div>
+</li>
 
 
-  <li><p>
-      Genta Indra Winata, Wu Chien-Sheng, Andrea Madotto, Pascale Fung
-      <br>
-      <b>Bilingual Character Representation for Efficiently Addressing Out-of-Vocabulary Words in Code-Switching Named Entity Recognition</b><br>
-      <i>ACL Code-Switching Workshop</i>-2018.
-      <br />
-      <a href="https://arxiv.org/abs/1805.12061" target="_blank">[PDF]</a>
-      <a href="javascript:toggleBibtex('CS2')">[BibTeX]</a>
-      </p>
-      <div id="bib_CS2" class="bibtex noshow">
-      <pre>
-        @article{CS2,
-          title={Bilingual Character Representation for Efficiently Addressing Out-of-Vocabulary Words in Code-Switching Named Entity Recognition},
-          author={Genta Indra Winata, Wu Chien-Sheng, Andrea Madotto, Pascale Fung},
-          publisher = {3rd Workshop in Computational Approaches in Linguistic Code-switching},
-          year = {2018}
-        }
-      </pre>
-      </div>
-      </li>
+<li><p>
+Genta Indra Winata, Wu Chien-Sheng, Andrea Madotto, Pascale Fung
+<br>
+<b>Bilingual Character Representation for Efficiently Addressing Out-of-Vocabulary Words in Code-Switching Named Entity Recognition</b><br>
+<i>ACL Code-Switching Workshop</i>-2018.
+<br />
+<a href="https://arxiv.org/abs/1805.12061" target="_blank">[PDF]</a>
+<a href="javascript:toggleBibtex('CS2')">[BibTeX]</a>
+</p>
+<div id="bib_CS2" class="bibtex noshow">
+<pre>
+@article{CS2,
+title={Bilingual Character Representation for Efficiently Addressing Out-of-Vocabulary Words in Code-Switching Named Entity Recognition},
+author={Genta Indra Winata, Wu Chien-Sheng, Andrea Madotto, Pascale Fung},
+publisher = {3rd Workshop in Computational Approaches in Linguistic Code-switching},
+year = {2018}
+}
+</pre>
+</div>
+</li>
 
 <!-- Item: DSTC6 -->
-  <li><p>
-  Pascale Fung, Bertero Dario, Xu Peng, Park Ji Ho, Wu Chien-Sheng, Andrea Madotto<br>
-  <b>Empathetic Dialog Systems</b><br>
-  <i>LREC Keynote</i>-2018.
-  <br />
-  <a href="http://lrec2018.lrec-conf.org/media/filer_public/2018/05/03/pascale_fungempathetic_dialog_systems.pdf" target="_blank">[PDF]</a>
-  <a href="javascript:toggleBibtex('fungempathetic')">[BibTeX]</a>
-  </p>
-  <div id="bib_fungempathetic" class="bibtex noshow">
-  <pre>
-    @article{fungempathetic,
-      title={Empathetic Dialog Systems},
-      author={Fung, Pascale and Bertero, Dario and Xu, Peng and Park, Ji Ho and Wu, Chien-Sheng and Madotto, Andrea},
-      publisher = {LREC, Keynote},
-      year = {2018}
-    }
-  </pre>
-  </div>
-  </li>
+<li><p>
+Pascale Fung, Bertero Dario, Xu Peng, Park Ji Ho, Wu Chien-Sheng, Andrea Madotto<br>
+<b>Empathetic Dialog Systems</b><br>
+<i>LREC Keynote</i>-2018.
+<br />
+<a href="http://lrec2018.lrec-conf.org/media/filer_public/2018/05/03/pascale_fungempathetic_dialog_systems.pdf" target="_blank">[PDF]</a>
+<a href="javascript:toggleBibtex('fungempathetic')">[BibTeX]</a>
+</p>
+<div id="bib_fungempathetic" class="bibtex noshow">
+<pre>
+@article{fungempathetic,
+title={Empathetic Dialog Systems},
+author={Fung, Pascale and Bertero, Dario and Xu, Peng and Park, Ji Ho and Wu, Chien-Sheng and Madotto, Andrea},
+publisher = {LREC, Keynote},
+year = {2018}
+}
+</pre>
+</div>
+</li>
 
 <!-- Item: DSTC6 -->
 <li ><p>
-  Chien-Sheng Wu, Andrea Madotto, Genta Winata, and Pascale Fung<br>
-  <b>End-to-End Recurrent Entity Network for Entity-Value Independent Goal-Oriented Dialog Learning</b><br>
-  <i>DSTC6</i>-2017.
-  <br />
-  <a href="http://workshop.colips.org/dstc6/papers/track1_paper02_wu.pdf" target="_blank">[PDF]</a>
-  <a href="https://github.com/jasonwu0731/RecurrentEntityNetwork" target="_blank">[CODE]</a>
-  <a href="javascript:toggleBibtex('DSTC6')">[BibTeX]</a>
-  </p>
-  <div id="bib_DSTC6" class="bibtex noshow">
-  <pre>
-    @article{wuend,
-      title={End-to-End Recurrent Entity Network for Entity-Value Independent Goal-Oriented Dialog Learning},
-      author={Wu, Chien-Sheng and Madotto, Andrea and Winata, Genta Indra and Fung, Pascale},
-      publisher = {Colips Workshop in Dialog System Technology Challenges},
-      year = {2017}
-    }
-  </pre>
-  </div>
-  </li>
+Chien-Sheng Wu, Andrea Madotto, Genta Winata, and Pascale Fung<br>
+<b>End-to-End Recurrent Entity Network for Entity-Value Independent Goal-Oriented Dialog Learning</b><br>
+<i>DSTC6</i>-2017.
+<br />
+<a href="http://workshop.colips.org/dstc6/papers/track1_paper02_wu.pdf" target="_blank">[PDF]</a>
+<a href="https://github.com/jasonwu0731/RecurrentEntityNetwork" target="_blank">[CODE]</a>
+<a href="javascript:toggleBibtex('DSTC6')">[BibTeX]</a>
+</p>
+<div id="bib_DSTC6" class="bibtex noshow">
+<pre>
+@article{wuend,
+title={End-to-End Recurrent Entity Network for Entity-Value Independent Goal-Oriented Dialog Learning},
+author={Wu, Chien-Sheng and Madotto, Andrea and Winata, Genta Indra and Fung, Pascale},
+publisher = {Colips Workshop in Dialog System Technology Challenges},
+year = {2017}
+}
+</pre>
+</div>
+</li>
 
 
 <li ><p>
-    Andrea Madotto, Attardi Giuseppe<br>
-    <b>Question Dependent Recurrent Entity Network for Question Answering</b><br>
-    <i>NL4AI</i>-2017.
-    <br />
-    <a href="http://ceur-ws.org/Vol-1983/paper_07.pdf" target="_blank">[PDF]</a>
-    <a href="https://github.com/andreamad8/QDREN" target="_blank">[CODE]</a>
-    <a href="javascript:toggleBibtex('NL4AI')">[BibTeX]</a>
-    </p>
-    <div id="bib_NL4AI" class="bibtex noshow">
-    <pre>
-        @article{madotto2017question,
-          title={NL4AI: 1st Workshop on Natural Language for Artificial Intelligence},
-          author={Madotto, Andrea and Attardi, Giuseppe},
-          journal={http://ceur-ws.org/Vol-1983/paper_07.pdf},
-          year={2017}
-        }
-    </pre>
-    </div>
-    </li>
+Andrea Madotto, Attardi Giuseppe<br>
+<b>Question Dependent Recurrent Entity Network for Question Answering</b><br>
+<i>NL4AI</i>-2017.
+<br />
+<a href="http://ceur-ws.org/Vol-1983/paper_07.pdf" target="_blank">[PDF]</a>
+<a href="https://github.com/andreamad8/QDREN" target="_blank">[CODE]</a>
+<a href="javascript:toggleBibtex('NL4AI')">[BibTeX]</a>
+</p>
+<div id="bib_NL4AI" class="bibtex noshow">
+<pre>
+@article{madotto2017question,
+title={NL4AI: 1st Workshop on Natural Language for Artificial Intelligence},
+author={Madotto, Andrea and Attardi, Giuseppe},
+journal={http://ceur-ws.org/Vol-1983/paper_07.pdf},
+year={2017}
+}
+</pre>
+</div>
+</li>
 
-    <li ><p>
-        Attardi Giuseppe, Carta Antonio, Errica Federico, Andrea Madotto, and Pannitto Ludovica<br>
-        <b>Fa3l at semeval-2017 task 3: A three embeddings recurrent neural network for question answering</b><br>
-        <i>SemEval</i>-2017.
-        <br />
-        <a href="http://www.aclweb.org/anthology/S17-2048" target="_blank">[PDF]</a>
-        <a href="https://github.com/AntonioCarta/ThreeRNN" target="_blank">[CODE]</a>
-        <a href="javascript:toggleBibtex('semeval')">[BibTeX]</a>
-        </p>
-        <div id="bib_semeval" class="bibtex noshow">
-        <pre>
-            @InProceedings{attardi-EtAl:2017:SemEval,
-              author    = {Attardi, Giuseppe  and  Carta, Antonio  and  Errica, Federico  and  Madotto, Andrea  and  Pannitto, Ludovica},
-              title     = {FA3L at SemEval-2017 Task 3: A ThRee Embeddings Recurrent Neural Network for Question Answering},
-              booktitle = {Proceedings of the 11th International Workshop on Semantic Evaluation (SemEval-2017)},
-              month     = {August},
-              year      = {2017},
-              address   = {Vancouver, Canada},
-              publisher = {Association for Computational Linguistics},
-              pages     = {299--304},
-              abstract  = {In this paper we present ThReeNN, a model for Community Question Answering,
-              Task 3, of SemEval-2017. The proposed model exploits both syntactic and
-              semantic information to build a single and meaningful embedding space. Using a
-              dependency parser in combination with word embeddings, the model creates
-              sequences of inputs for a Recurrent Neural Network, which are then used for the
-              ranking purposes of the Task. The score obtained on the official test data
-              shows promising results.},
-              url       = {http://www.aclweb.org/anthology/S17-2048}
-            }
-        </pre>
-        </div>
-        </li>
+<li ><p>
+Attardi Giuseppe, Carta Antonio, Errica Federico, Andrea Madotto, and Pannitto Ludovica<br>
+<b>Fa3l at semeval-2017 task 3: A three embeddings recurrent neural network for question answering</b><br>
+<i>SemEval</i>-2017.
+<br />
+<a href="http://www.aclweb.org/anthology/S17-2048" target="_blank">[PDF]</a>
+<a href="https://github.com/AntonioCarta/ThreeRNN" target="_blank">[CODE]</a>
+<a href="javascript:toggleBibtex('semeval')">[BibTeX]</a>
+</p>
+<div id="bib_semeval" class="bibtex noshow">
+<pre>
+@InProceedings{attardi-EtAl:2017:SemEval,
+author    = {Attardi, Giuseppe  and  Carta, Antonio  and  Errica, Federico  and  Madotto, Andrea  and  Pannitto, Ludovica},
+title     = {FA3L at SemEval-2017 Task 3: A ThRee Embeddings Recurrent Neural Network for Question Answering},
+booktitle = {Proceedings of the 11th International Workshop on Semantic Evaluation (SemEval-2017)},
+month     = {August},
+year      = {2017},
+address   = {Vancouver, Canada},
+publisher = {Association for Computational Linguistics},
+pages     = {299--304},
+abstract  = {In this paper we present ThReeNN, a model for Community Question Answering,
+Task 3, of SemEval-2017. The proposed model exploits both syntactic and
+semantic information to build a single and meaningful embedding space. Using a
+dependency parser in combination with word embeddings, the model creates
+sequences of inputs for a Recurrent Neural Network, which are then used for the
+ranking purposes of the Task. The score obtained on the official test data
+shows promising results.},
+url       = {http://www.aclweb.org/anthology/S17-2048}
+}
+</pre>
+</div>
+</li>
 
-        <li ><p>
-            Chiancone Andrea, Andrea Madotto<br>
-            <b>A Multistrain Bacterial Model for Link Prediction</b><br>
-            <i>ICNC</i>-2016.
-            <br />
-            <a href="http://dx.doi.org/10.1109/ICNC.2015.7378141" target="_blank">[PDF]</a>
-            <a href="javascript:toggleBibtex('chiancone2015multistrain')">[BibTeX]</a>
-            </p>
-            <div id="bib_chiancone2015multistrain" class="bibtex noshow">
-            <pre>
-                @inproceedings{chiancone2015multistrain,
-                  title={A multistrain bacterial model for link prediction andrea chiancone},
-                  author={Chiancone, Andrea and Milani, Alfredo and Poggioni, Valentina and Pallottelli, Simonetta and Madotto, Andrea and Franzoni, Valentina},
-                  booktitle={Natural Computation (ICNC), 2015 11th International Conference on},
-                  pages={1075--1079},
-                  year={2015},
-                  organization={IEEE}
-                }
-            </pre>
-            </div>
-            </li>
+<li ><p>
+Chiancone Andrea, Andrea Madotto<br>
+<b>A Multistrain Bacterial Model for Link Prediction</b><br>
+<i>ICNC</i>-2016.
+<br />
+<a href="http://dx.doi.org/10.1109/ICNC.2015.7378141" target="_blank">[PDF]</a>
+<a href="javascript:toggleBibtex('chiancone2015multistrain')">[BibTeX]</a>
+</p>
+<div id="bib_chiancone2015multistrain" class="bibtex noshow">
+<pre>
+@inproceedings{chiancone2015multistrain,
+title={A multistrain bacterial model for link prediction andrea chiancone},
+author={Chiancone, Andrea and Milani, Alfredo and Poggioni, Valentina and Pallottelli, Simonetta and Madotto, Andrea and Franzoni, Valentina},
+booktitle={Natural Computation (ICNC), 2015 11th International Conference on},
+pages={1075--1079},
+year={2015},
+organization={IEEE}
+}
+</pre>
+</div>
+</li>
 </ul>
 
 
@@ -753,49 +753,49 @@ Andrea Madotto, Chien-Sheng Wu, and Pascale Fung<br><b>Mem2Seq: Effectively Inco
 
 <h4 style="margin-bottom:0px;padding-top:20px;">Written Theses</h4>
 
-    <!-- Generated from JabRef by PubList by Truong Nghiem at 06:25 on 2015.07.08. -->
-    <ul class="biblist">
-        <!-- Item: Pont-Tuset2014 -->
-        <li ><p>
-            M.Sc Thesis<br>
-            <b>Question Dependent Recurrent Entity Network for Question Answering</b><br>
-            University of Pisa, 2017
+<!-- Generated from JabRef by PubList by Truong Nghiem at 06:25 on 2015.07.08. -->
+<ul class="biblist">
+<!-- Item: Pont-Tuset2014 -->
+<li ><p>
+M.Sc Thesis<br>
+<b>Question Dependent Recurrent Entity Network for Question Answering</b><br>
+University of Pisa, 2017
 
-            <br />
-            <a href="/images/MT.pdf"  target="_blank">[PDF]</a>
-            <a href="javascript:toggleBibtex('Madotto2017')">[BibTeX]</a>
+<br />
+<a href="/images/MT.pdf"  target="_blank">[PDF]</a>
+<a href="javascript:toggleBibtex('Madotto2017')">[BibTeX]</a>
 
-            </p>
-            <div id="bib_Madotto2017" class="bibtex noshow">
-                <pre>@phdthesis{Madotto2017,
-                      author = {Andrea Madotto},
-                      title = {Question Dependent Recurrent Entity Network for Question Answering},
-                      school = {University of Pisa},
-                      year = {2017}
+</p>
+<div id="bib_Madotto2017" class="bibtex noshow">
+<pre>@phdthesis{Madotto2017,
+author = {Andrea Madotto},
+title = {Question Dependent Recurrent Entity Network for Question Answering},
+school = {University of Pisa},
+year = {2017}
 }</pre>
-            </div>
-        </li>
+</div>
+</li>
 
-                <!-- Item: Pont-Tuset2009 -->
-        <li ><p>
-            B.Sc. Thesis<br>
-            <b>Facility location problem in a bi-dimensional mesh</b>
-            <br>
-            University of Perugia, 2015
-            <br />
-            <a href="/images/BT.pdf"  target="_blank">[ITA-PDF]</a>
-            <a href="javascript:toggleBibtex('Madotto2014')">[BibTeX]</a>
-            </p>
-            <div id="bib_Madotto2014" class="bibtex noshow">
-                <pre>@BachelorThesis{Madotto2014,
-                    author = {Andrea Madotto},
-                    title = {Facility location problem in a bi-dimensional mesh},
-                    school = {University of Perugia},
-                    year = {2015}
+<!-- Item: Pont-Tuset2009 -->
+<li ><p>
+B.Sc. Thesis<br>
+<b>Facility location problem in a bi-dimensional mesh</b>
+<br>
+University of Perugia, 2015
+<br />
+<a href="/images/BT.pdf"  target="_blank">[ITA-PDF]</a>
+<a href="javascript:toggleBibtex('Madotto2014')">[BibTeX]</a>
+</p>
+<div id="bib_Madotto2014" class="bibtex noshow">
+<pre>@BachelorThesis{Madotto2014,
+author = {Andrea Madotto},
+title = {Facility location problem in a bi-dimensional mesh},
+school = {University of Perugia},
+year = {2015}
 }</pre>
-            </div>
-        </li>
-    </ul>
+</div>
+</li>
+</ul>
 
 
 
@@ -803,16 +803,16 @@ Andrea Madotto, Chien-Sheng Wu, and Pascale Fung<br><b>Mem2Seq: Effectively Inco
 
 
 
-    </div><!-- /.article-wrap -->
-    {% if site.disqus_shortname and page.comments %}
-      <section id="disqus_thread"></section><!-- /#disqus_thread -->
-    {% endif %}
-  </article>
+</div><!-- /.article-wrap -->
+{% if site.disqus_shortname and page.comments %}
+<section id="disqus_thread"></section><!-- /#disqus_thread -->
+{% endif %}
+</article>
 </div><!-- /#index -->
 <div class="footer-wrap">
-  <footer>
-    {% include _footer.html %}
-  </footer>
+<footer>
+{% include _footer.html %}
+</footer>
 </div><!-- /.footer-wrap -->
 
 {% include _scripts.html %}
