@@ -21,7 +21,7 @@ I am also a reviewer for NAACL2019, ACL2019, EMNLP2019 and Journal of Natural La
 <br/>
 
 <h1>News</h1>
-- [PPLM](https://transformer.huggingface.co/model/pplm) got accepted in [ICLR 2019](https://openreview.net/pdf?id=H1edEyBKDS)
+- [PPLM](https://transformer.huggingface.co/model/pplm) got accepted in [ICLR 2020](https://openreview.net/pdf?id=H1edEyBKDS)
 <br/>
 - [Attention over Parameters](http://alborz-geramifard.com/workshops/neurips19-Conversational-AI/Papers/15.pdf) won the [Best Paper Award](http://alborz-geramifard.com/workshops/neurips19-Conversational-AI/Main.html) at NeurIPS 2019 ConversationalAI Workshop. 
 <br/>
