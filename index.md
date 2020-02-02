@@ -16,7 +16,7 @@ I was born in [Perugia](https://en.wikipedia.org/wiki/Perugia), where I received
 My research interests are: [Learning to Learn](http://people.idsia.ch/~juergen/metalearner.html) (a.k.a. meta-learning), End-to-End dialogue systems using [Memory Augmented Neural Networks](https://www.nature.com/articles/nature20101), and [Multi-Task learning](https://en.wikipedia.org/wiki/Multi-task_learning) for word and sentence level embeddings.
 
 <br/>
-I am also a reviewer for NAACL2019, ACL2019, EMNLP2019 and Journal of Natural Language Engineering.
+I am a reviewer for NAACL, ACL, EMNLP, AAAI, Journal of Natural Language Engineering and Computer Speech and Languages.
 
 <br/>
 
