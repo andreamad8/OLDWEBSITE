@@ -21,6 +21,8 @@ I am a reviewer for NAACL, ACL, EMNLP, AAAI, Journal of Natural Language Enginee
 <br/>
 
 <h1>News</h1>
+- [GO-Explore](https://arxiv.org/pdf/1901.10995.pdf) for text-based games got accepted in [IJCAI 2020](https://arxiv.org/pdf/2001.08868.pdf)
+<br/>
 - [PPLM](https://transformer.huggingface.co/model/pplm) got accepted in [ICLR 2020](https://openreview.net/pdf?id=H1edEyBKDS)
 <br/>
 - [Attention over Parameters](http://alborz-geramifard.com/workshops/neurips19-Conversational-AI/Papers/15.pdf) won the [Best Paper Award](http://alborz-geramifard.com/workshops/neurips19-Conversational-AI/Main.html) at NeurIPS 2019 ConversationalAI Workshop. 
