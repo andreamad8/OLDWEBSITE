@@ -195,8 +195,17 @@ The good part is that you can still use the C++11 code by including the <em>Tech
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
   ga('create', 'UA-80604868-2', 'auto');
+  ga('require', 'ipMeta', {
+      serviceProvider: 'dimension1',
+      networkDomain: 'dimension2',
+      networkType: 'dimension3',
+  });
+  ga('ipMeta:loadNetworkFields');
   ga('send', 'pageview');
 </script>
+
+<!-- IpMeta must be included after Google Analytics -->
+<script async src="https://ipmeta.io/plugin.js"></script>
 
 
   
