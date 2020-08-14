@@ -5,36 +5,38 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>About me  &#8211; Page Not Found </title>
-<meta name="description" content="Page not found. Your pixels are in another canvas.">
+<title>About me  &#8211; Word to LaTeX, with Equations </title>
+<meta name="description" content="How to get the LaTeX code, including equations, out of a Word document.">
 <meta name="keywords" content="">
 <!-- Twitter Cards -->
 	
-		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:card" content="summary">
 		<meta name="twitter:image" content=
 			
-				"http://localhost:4000/images/texture-feature-01.jpg"
+				
+						"http://localhost:4000/images/"
+				
 			
 		>
 	
-	<meta name="twitter:title" content="Page Not Found">
-	<meta name="twitter:description" content="Page not found. Your pixels are in another canvas.">
+	<meta name="twitter:title" content="Word to LaTeX, with Equations">
+	<meta name="twitter:description" content="How to get the LaTeX code, including equations, out of a Word document.">
 	<meta name="twitter:creator" content="@AndreaMadotto">
 
 
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Page Not Found">
-<meta property="og:description" content="Page not found. Your pixels are in another canvas.">
-<meta property="og:url" content="http://localhost:4000/404/">
+<meta property="og:title" content="Word to LaTeX, with Equations">
+<meta property="og:description" content="How to get the LaTeX code, including equations, out of a Word document.">
+<meta property="og:url" content="http://localhost:4000/old_POST/2015-07-27-word-equations-to-latex/">
 <meta property="og:site_name" content="About me">
 
 
 
 
 
-<link rel="canonical" href="http://localhost:4000/404/">
+<link rel="canonical" href="http://localhost:4000/old_POST/2015-07-27-word-equations-to-latex/">
 <link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="About me Feed">
 
 
@@ -73,7 +75,7 @@
 
 </head>
 
-<body class="page">
+<body class="post">
 
 <!--[if lt IE 9]><div class="browser-upgrade alert alert-info">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->
 
@@ -98,17 +100,6 @@
 	</div><!-- /.top-navigation -->
 </div><!-- /.navigation-wrapper -->
 
-
-  <div class="image-wrap">
-  <img src=
-    
-      "http://localhost:4000/images/texture-feature-01.jpg"
-    
-  alt="Page Not Found feature image">
-  
-    <span class="image-credit">Photo Credit: <a href="http://texturelovers.com">Texture Lovers</a></span>
-  
-  </div><!-- /.image-wrap -->
 
 
 <div id="main" role="main">
@@ -136,23 +127,65 @@
 
   </div>
   <article>
-    <h1>Page Not Found</h1>
+    <div class="headline-wrap">
+      
+        <h1><a href="http://localhost:4000/old_POST/2015-07-27-word-equations-to-latex/" rel="bookmark" title="Word to LaTeX, with Equations">Word to LaTeX, with Equations</a></h1>
+      
+    </div><!--/ .headline-wrap -->
     <div class="article-wrap">
-      <p>Sorry, but the page you were trying to view does not exist — perhaps you can try searching for it below.</p>
+      <p>Maybe you have some old documents with nasty equations written in Word, but now you need to re-use them in LaTeX (maybe for your dissertation), and of course you don’t want to re-type everything.
+Thankfully, there exists <a href="http://writer2latex.sourceforge.net">writer2latex</a> that will help you do that. Here are the steps:</p>
 
-<script type="text/javascript">
-  var GOOG_FIXURL_LANG = 'en';
-  var GOOG_FIXURL_SITE = 'http://localhost:4000'
-</script>
+<ol>
+  <li>
+    <p>writer2latex takes a LibreOffice document as input, so first thing is to <strong>download and install <a href="http://writer2latex.sourceforge.net">LibreOffice</a></strong>, open your Word document (<code class="highlighter-rouge">.docx</code> or <code class="highlighter-rouge">.doc</code>) and <strong>save it as <code class="highlighter-rouge">.odt</code></strong>.</p>
+  </li>
+  <li>
+    <p>Then <strong>download and install <a href="https://www.libreoffice.org">writer2latex</a></strong> and read the instructions on how to run it. In Unix, for instance, it involved changing the execution permissions of the binary: <code class="highlighter-rouge">chmod +x w2l</code>.</p>
+  </li>
+  <li>
+    <p>Run the code:
+<code class="highlighter-rouge">./w2l -ultraclean Text.odt Text.tex</code>
+We use the <code class="highlighter-rouge">-ultraclean</code> option to get rid of all formatting, since <span class="latex">L<sup>a</sup>T<sub>e</sub>X</span> will take care of that.
+It is probable that the generated <code class="highlighter-rouge">.tex</code> won’t compile at first, so I recommend you get the parts you’re interested in by pieces into your final document.</p>
+  </li>
+</ol>
 
-<script type="text/javascript" src="http://linkhelp.clients.google.com/tbproxy/lh/wm/fixurl.js">
-</script>
+<p>Big kudos to Henrik Just!</p>
+
+      <hr />
+      <footer role="contentinfo">
+        <div class="article-author-bottom">
+          
+	<img src="http://localhost:4000/images/me.jpeg" class="bio-photo" alt="Andrea Madotto bio photo"></a>
+
+<h3>Andrea Madotto</h3>
+<p>Deep learning, Machine Learning, Learning To Learn, Natural Language Processing.</p>
+<a href="/images/CV.pdf" class="author-social" target="_blank"><i class="fa fa-foursquare"></i> Curriculum</a>
+<a href="http://twitter.com/AndreaMadotto" class="author-social" target="_blank"><i class="fa fa-twitter-square"></i> Twitter</a>
+<a href="http://scholar.google.es/citations?user=JBnyLicAAAAJ" class="author-social" target="_blank"><i class="ai ai-google-scholar-square"></i>&nbsp; G. Scholar</a>
+
+<a href="http://linkedin.com/in/andrea-madotto-899b1386" class="author-social" target="_blank"><i class="fa fa-linkedin-square"></i> LinkedIn</a>
 
 
+<a href="http://github.com/andreamad8" class="author-social" target="_blank"><i class="fa fa-github-square"></i> Github</a>
+<a href="http://stackoverflow.com/users/4544812/andrea-madotto" class="author-social" target="_blank"><i class="fa fa-stack-overflow"></i> Stackoverflow</a>
+
+
+
+
+<a href="mailto:andreamad8@gmail.com" class="author-social" target="_blank"><i class="fa fa-envelope-square"></i> e-Mail</a>
+
+
+        </div>
+        <p class="byline"><strong>Word to LaTeX, with Equations</strong> was published on <time datetime=""></time> by <a href="http://localhost:4000" title="About Andrea Madotto">Andrea Madotto</a>.</p>
+      </footer>
     </div><!-- /.article-wrap -->
-    
+  
+    <section id="disqus_thread"></section><!-- /#disqus_thread -->
+  
   </article>
-</div><!-- /#index -->
+</div><!-- /#main -->
 
 <div class="footer-wrap">
   <footer>
@@ -185,7 +218,31 @@
 <!-- IpMeta must be included after Google Analytics -->
 <script async src="https://ipmeta.io/plugin.js"></script>
 
-          
+
+  
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'jponttuset'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+	        
 
 </body>
 </html>

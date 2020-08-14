@@ -11,7 +11,7 @@ owner:
   name:           Andrea Madotto
   avatar:         me.jpeg    
   bio:            Deep learning, Machine Learning, Learning To Learn, Natural Language Processing.
-  email:          eeandreamad@ust.hk
+  email:          andreamad8@gmail.com
   # Social networking links are used in author-bio sidebar. Update and remove as you like.
   foursquare: aa
   twitter: AndreaMadotto
@@ -34,8 +34,8 @@ links:
     url: /cv/
   - title: Code
     url: /code/
-  # - title: Blog
-  #   url: /blog/
+  - title: Blog
+    url: /blog/
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Asia/Shanghai

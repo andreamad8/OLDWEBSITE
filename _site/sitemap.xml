@@ -6,6 +6,66 @@
     
     
     <url>
+        <loc>http://localhost:4000/old_POST/2014-09-01-compiling-cplex-with-c++11-functionalities/</loc>
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/old_POST/2014-11-20-building-an-academic-website/</loc>
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/old_POST/2014-12-30-solving-sudokus-like-a-pro-1/</loc>
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/old_POST/2015-01-15-a-small-trick-to-work-with-coco/</loc>
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/old_POST/2015-01-19-matlab2014-mex-flags/</loc>
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/old_POST/2015-05-27-deep-learning-scraping/</loc>
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/old_POST/2015-06-15-solving-sudokus-like-a-pro-2/</loc>
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/old_POST/2015-07-27-word-equations-to-latex/</loc>
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/old_POST/2015-12-11-deep-learning-plateau/</loc>
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/old_POST/2016-04-26-deep-learning-takes-over-again/</loc>
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/old_POST/2016-05-09-caffe-mac/</loc>
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/old_POST/2016-05-27-xkcd-deep-learning/</loc>
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/old_POST/2016-08-29-deep-learning-evolution/</loc>
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/old_POST/2017-06-07-dl-lstm-gan-evolution/</loc>
+    </url>
+    
+    <url>
+        <loc>http://localhost:4000/old_POST/2017-10-05-gans-et-al-growing-strong/</loc>
+    </url>
+    
+    <url>
         <loc>http://localhost:4000/404/</loc>
     </url>
     
@@ -36,63 +96,7 @@
 
     
     <url>
-        <loc>http://localhost:4000/gans-et-al-growing-strong/</loc>
-    </url>
-    
-    <url>
-        <loc>http://localhost:4000/dl-lstm-gan-evolution/</loc>
-    </url>
-    
-    <url>
-        <loc>http://localhost:4000/deep-learning-evolution/</loc>
-    </url>
-    
-    <url>
-        <loc>http://localhost:4000/xkcd-deep-learning/</loc>
-    </url>
-    
-    <url>
-        <loc>http://localhost:4000/caffe-mac/</loc>
-    </url>
-    
-    <url>
-        <loc>http://localhost:4000/deep-learning-takes-over-again/</loc>
-    </url>
-    
-    <url>
-        <loc>http://localhost:4000/deep-learning-plateau/</loc>
-    </url>
-    
-    <url>
-        <loc>http://localhost:4000/word-equations-to-latex/</loc>
-    </url>
-    
-    <url>
-        <loc>http://localhost:4000/solving-sudokus-like-a-pro-2/</loc>
-    </url>
-    
-    <url>
-        <loc>http://localhost:4000/deep-learning-scraping/</loc>
-    </url>
-    
-    <url>
-        <loc>http://localhost:4000/matlab2014-mex-flags/</loc>
-    </url>
-    
-    <url>
-        <loc>http://localhost:4000/a-small-trick-to-work-with-coco/</loc>
-    </url>
-    
-    <url>
-        <loc>http://localhost:4000/solving-sudokus-like-a-pro-1/</loc>
-    </url>
-    
-    <url>
-        <loc>http://localhost:4000/building-an-academic-website/</loc>
-    </url>
-    
-    <url>
-        <loc>http://localhost:4000/compiling-cplex-with-c++11-functionalities/</loc>
+        <loc>http://localhost:4000/few-shot-gpt/</loc>
     </url>
     
 </urlset>

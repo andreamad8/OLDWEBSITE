@@ -5,36 +5,38 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>About me  &#8211; Page Not Found </title>
-<meta name="description" content="Page not found. Your pixels are in another canvas.">
+<title>About me  &#8211; Compile CPLEX in C++ with C++11 Functionalities </title>
+<meta name="description" content="How to compile a code that contains C++11 functionalities and CPLEX.">
 <meta name="keywords" content="">
 <!-- Twitter Cards -->
 	
-		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:card" content="summary">
 		<meta name="twitter:image" content=
 			
-				"http://localhost:4000/images/texture-feature-01.jpg"
+				
+						"http://localhost:4000/images/"
+				
 			
 		>
 	
-	<meta name="twitter:title" content="Page Not Found">
-	<meta name="twitter:description" content="Page not found. Your pixels are in another canvas.">
+	<meta name="twitter:title" content="Compile CPLEX in C++ with C++11 Functionalities">
+	<meta name="twitter:description" content="How to compile a code that contains C++11 functionalities and CPLEX.">
 	<meta name="twitter:creator" content="@AndreaMadotto">
 
 
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Page Not Found">
-<meta property="og:description" content="Page not found. Your pixels are in another canvas.">
-<meta property="og:url" content="http://localhost:4000/404/">
+<meta property="og:title" content="Compile CPLEX in C++ with C++11 Functionalities">
+<meta property="og:description" content="How to compile a code that contains C++11 functionalities and CPLEX.">
+<meta property="og:url" content="http://localhost:4000/old_POST/2014-09-01-compiling-cplex-with-c++11-functionalities/">
 <meta property="og:site_name" content="About me">
 
 
 
 
 
-<link rel="canonical" href="http://localhost:4000/404/">
+<link rel="canonical" href="http://localhost:4000/old_POST/2014-09-01-compiling-cplex-with-c++11-functionalities/">
 <link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="About me Feed">
 
 
@@ -73,7 +75,7 @@
 
 </head>
 
-<body class="page">
+<body class="post">
 
 <!--[if lt IE 9]><div class="browser-upgrade alert alert-info">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->
 
@@ -98,17 +100,6 @@
 	</div><!-- /.top-navigation -->
 </div><!-- /.navigation-wrapper -->
 
-
-  <div class="image-wrap">
-  <img src=
-    
-      "http://localhost:4000/images/texture-feature-01.jpg"
-    
-  alt="Page Not Found feature image">
-  
-    <span class="image-credit">Photo Credit: <a href="http://texturelovers.com">Texture Lovers</a></span>
-  
-  </div><!-- /.image-wrap -->
 
 
 <div id="main" role="main">
@@ -136,23 +127,56 @@
 
   </div>
   <article>
-    <h1>Page Not Found</h1>
+    <div class="headline-wrap">
+      
+        <h1><a href="http://localhost:4000/old_POST/2014-09-01-compiling-cplex-with-c++11-functionalities/" rel="bookmark" title="Compile CPLEX in C++ with C++11 Functionalities">Compile CPLEX in C++ with C++11 Functionalities</a></h1>
+      
+    </div><!--/ .headline-wrap -->
     <div class="article-wrap">
-      <p>Sorry, but the page you were trying to view does not exist — perhaps you can try searching for it below.</p>
+      <p><a href="http://www.ibm.com/developerworks/downloads/ws/ilogcplex/">CPLEX</a> is a pretty awesome optimization toolbox from IBM, and it is free for academic use. It can be called from C++ (apart from Matlab, Python, etc.), but it’s not the easiest library to compile…
+You will encounter some problems for instance if your code has some C++11 functionalities from the C++ standard library.</p>
 
-<script type="text/javascript">
-  var GOOG_FIXURL_LANG = 'en';
-  var GOOG_FIXURL_SITE = 'http://localhost:4000'
-</script>
+<p><br />
+Long story short, CPLEX requires the flag <code class="highlighter-rouge">-stdlib=libstdc++</code>, which <em>downgrades</em> the version of the standard library to a version where the C++11 functionalities where not available by default.
+This way, your part of the code with C++11 won’t compile.</p>
 
-<script type="text/javascript" src="http://linkhelp.clients.google.com/tbproxy/lh/wm/fixurl.js">
-</script>
+<p><br />
+The good part is that you can still use the C++11 code by including the <em>Technical Report 1</em> part of the library, that is, by adding <code class="highlighter-rouge">tr1/</code> to the files that the compiler does not found and changing <code class="highlighter-rouge">std::</code> by <code class="highlighter-rouge">std::tr1::</code> in the functions that are not found.</p>
 
 
+      <hr />
+      <footer role="contentinfo">
+        <div class="article-author-bottom">
+          
+	<img src="http://localhost:4000/images/me.jpeg" class="bio-photo" alt="Andrea Madotto bio photo"></a>
+
+<h3>Andrea Madotto</h3>
+<p>Deep learning, Machine Learning, Learning To Learn, Natural Language Processing.</p>
+<a href="/images/CV.pdf" class="author-social" target="_blank"><i class="fa fa-foursquare"></i> Curriculum</a>
+<a href="http://twitter.com/AndreaMadotto" class="author-social" target="_blank"><i class="fa fa-twitter-square"></i> Twitter</a>
+<a href="http://scholar.google.es/citations?user=JBnyLicAAAAJ" class="author-social" target="_blank"><i class="ai ai-google-scholar-square"></i>&nbsp; G. Scholar</a>
+
+<a href="http://linkedin.com/in/andrea-madotto-899b1386" class="author-social" target="_blank"><i class="fa fa-linkedin-square"></i> LinkedIn</a>
+
+
+<a href="http://github.com/andreamad8" class="author-social" target="_blank"><i class="fa fa-github-square"></i> Github</a>
+<a href="http://stackoverflow.com/users/4544812/andrea-madotto" class="author-social" target="_blank"><i class="fa fa-stack-overflow"></i> Stackoverflow</a>
+
+
+
+
+<a href="mailto:andreamad8@gmail.com" class="author-social" target="_blank"><i class="fa fa-envelope-square"></i> e-Mail</a>
+
+
+        </div>
+        <p class="byline"><strong>Compile CPLEX in C++ with C++11 Functionalities</strong> was published on <time datetime=""></time> by <a href="http://localhost:4000" title="About Andrea Madotto">Andrea Madotto</a>.</p>
+      </footer>
     </div><!-- /.article-wrap -->
-    
+  
+    <section id="disqus_thread"></section><!-- /#disqus_thread -->
+  
   </article>
-</div><!-- /#index -->
+</div><!-- /#main -->
 
 <div class="footer-wrap">
   <footer>
@@ -185,7 +209,31 @@
 <!-- IpMeta must be included after Google Analytics -->
 <script async src="https://ipmeta.io/plugin.js"></script>
 
-          
+
+  
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'jponttuset'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+	        
 
 </body>
 </html>
