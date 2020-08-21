@@ -169,6 +169,6 @@ In this short blog, we demonstrate the potential of LM priming few-shot learning
 I would like to thanks [Jason Wu](https://jasonwu0731.github.io/) for providing an easy to use code in ToD-BERT and for clarification about the code and tasks, [Baolin Peng](https://scholar.google.com/citations?user=u1CNjgwAAAAJ&hl=zh-CN) for the easy to use repository FewShotNLG and for providing help with the scorer, and [Sumanth Dathathri](https://dathath.github.io/) for the discussion and insight about the limitation of the LM priming few-shots. 
  
 ### Useful Links
-- Github: https://github.com/andreamad8/TASK-ORIENTED-LM-FEWSHOT
-- Paper: https://arxiv.org/abs/2008.06239
-- Medium Blog: https://medium.com/@madottoandrea/language-model-as-few-shot-learner-for-task-oriented-dialogue-systems-db4765796744
+- Github: [https://github.com/andreamad8/TASK-ORIENTED-LM-FEWSHOT](https://github.com/andreamad8/TASK-ORIENTED-LM-FEWSHOT)
+- Paper: [https://arxiv.org/abs/2008.06239](https://arxiv.org/abs/2008.06239)
+- Medium Blog: [https://medium.com/@madottoandrea/language-model-as-few-shot-learner-for-task-oriented-dialogue-systems-db4765796744](https://medium.com/@madottoandrea/language-model-as-few-shot-learner-for-task-oriented-dialogue-systems-db4765796744)
