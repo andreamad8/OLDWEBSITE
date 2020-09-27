@@ -16,11 +16,19 @@ I was born in [Perugia](https://en.wikipedia.org/wiki/Perugia), where I received
 My research interests are: [Learning to Learn](http://people.idsia.ch/~juergen/metalearner.html) (a.k.a. meta-learning), End-to-End dialogue systems using [Memory Augmented Neural Networks](https://www.nature.com/articles/nature20101), and [Multi-Task learning](https://en.wikipedia.org/wiki/Multi-task_learning) for word and sentence level embeddings.
 
 <br/>
-I am a reviewer for NAACL, ACL, EMNLP, AAAI, Journal of Natural Language Engineering and Computer Speech and Languages.
+I am a reviewer for ACL, EMNLP, NeurIPS, ICLR, AAAI, NAACL, Journal of Natural Language Engineering and Computer Speech and Languages.
 
 <br/>
 
 <h1>News</h1>
+- We are presenting a [NeurIPS Tutorial](https://medium.com/@NeurIPSConf/tutorial-selections-for-neruips-2020-33b79f4915c4) on Conversational AI
+<br/>
+- 4 papers accepted at EMNLP2020 (3 findings and 1 main) !
+<br/>
+- check out our new [DEMO](https://adapterbot.emos.ai/) of "The Adapter-Bot: All-In-One Controllable Conversational Model"
+<br/>
+- My first blog post: "Language Models as Few-Shot Learner for Task-Oriented Dialogue Systems"
+<br/>
 - [GO-Explore](https://arxiv.org/pdf/1901.10995.pdf) for text-based games got accepted in [IJCAI 2020](https://arxiv.org/pdf/2001.08868.pdf)
 <br/>
 - [PPLM](https://transformer.huggingface.co/model/pplm) got accepted in [ICLR 2020](https://openreview.net/pdf?id=H1edEyBKDS)
