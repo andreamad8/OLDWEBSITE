@@ -21,13 +21,13 @@ I am a reviewer for ACL, EMNLP, NeurIPS, ICLR, AAAI, NAACL, Journal of Natural L
 <br/>
 
 <h1>News</h1>
-- We are presenting a [NeurIPS Tutorial](https://medium.com/@NeurIPSConf/tutorial-selections-for-neruips-2020-33b79f4915c4) on Conversational AI
+- We are presenting the [NeurIPS Tutorial](https://medium.com/@NeurIPSConf/tutorial-selections-for-neruips-2020-33b79f4915c4) on Conversational AI.
 <br/>
-- 4 papers accepted at EMNLP2020 (3 findings and 1 main) !
+- 4 papers accepted at EMNLP2020 (3 findings and 1 main)
 <br/>
 - check out our new [DEMO](https://adapterbot.emos.ai/) of "The Adapter-Bot: All-In-One Controllable Conversational Model"
 <br/>
-- My first blog post: "Language Models as Few-Shot Learner for Task-Oriented Dialogue Systems"
+- My first blog post: ["Language Models as Few-Shot Learner for Task-Oriented Dialogue Systems"](https://github.com/andreamad8/TASK-ORIENTED-LM-FEWSHOT)
 <br/>
 - [GO-Explore](https://arxiv.org/pdf/1901.10995.pdf) for text-based games got accepted in [IJCAI 2020](https://arxiv.org/pdf/2001.08868.pdf)
 <br/>
